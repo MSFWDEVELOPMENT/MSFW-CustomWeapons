@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF - 8"?>
+
+<CWeaponComponentInfoBlob>
+	<Infos>
+	    <Item type="CWeaponComponentInfo">
+            <Name>COMPONENT_MPX_STOCK_01</Name>
+            <Model>mpx_stock1</Model>
+            <LocName>"STOCK"</LocName>
+            <LocDesc>"STOCK"</LocDesc>
+            <AttachBone>AAPStock</AttachBone>
+            <WeaponAttachBone>WAPStock</WeaponAttachBone>
+            <AccuracyModifier type="NULL"/>
+            <DamageModifier type="NULL"/>
+            <bShownOnWheel value="true"/>
+            <CreateObject value="true"/>
+            <HudDamage value="0"/>
+            <HudSpeed value="0"/>
+            <HudCapacity value="0"/>
+            <HudAccuracy value="5"/>
+            <HudRange value="0"/>
+        </Item>
+        <Item type="CWeaponComponentInfo">
+            <Name>COMPONENT_MPX_STOCK_02</Name>
+            <Model>mpx_stock2</Model>
+            <LocName>"STOCK"</LocName>
+            <LocDesc>"STOCK"</LocDesc>
+            <AttachBone>AAPStock</AttachBone>
+            <WeaponAttachBone>WAPStock</WeaponAttachBone>
+            <AccuracyModifier type="NULL"/>
+            <DamageModifier type="NULL"/>
+            <bShownOnWheel value="true"/>
+            <CreateObject value="true"/>
+            <HudDamage value="0"/>
+            <HudSpeed value="0"/>
+            <HudCapacity value="0"/>
+            <HudAccuracy value="5"/>
+            <HudRange value="0"/>
+        </Item>
+        <Item type="CWeaponComponentInfo">
+            <Name>COMPONENT_MPX_STOCK_03</Name>
+            <Model>mpx_stock3</Model>
+            <LocName>"STOCK"</LocName>
+            <LocDesc>"STOCK"</LocDesc>
+            <AttachBone>AAPStock</AttachBone>
+            <WeaponAttachBone>WAPStock</WeaponAttachBone>
+            <AccuracyModifier type="NULL"/>
+            <DamageModifier type="NULL"/>
+            <bShownOnWheel value="true"/>
+            <CreateObject value="true"/>
+            <HudDamage value="0"/>
+            <HudSpeed value="0"/>
+            <HudCapacity value="0"/>
+            <HudAccuracy value="5"/>
+            <HudRange value="0"/>
+        </Item>
+        <Item type="CWeaponComponentInfo">
+            <Name>COMPONENT_MPX_STOCK_04</Name>
+            <Model>mpx_stock4</Model>
+            <LocName>"STOCK"</LocName>
+            <LocDesc>"STOCK"</LocDesc>
+            <AttachBone>AAPStock</AttachBone>
+            <WeaponAttachBone>WAPStock</WeaponAttachBone>
+            <AccuracyModifier type="NULL"/>
+            <DamageModifier type="NULL"/>
+            <bShownOnWheel value="true"/>
+            <CreateObject value="true"/>
+            <HudDamage value="0"/>
+            <HudSpeed value="0"/>
+            <HudCapacity value="0"/>
+            <HudAccuracy value="5"/>
+            <HudRange value="0"/>
+        </Item>
+	    <Item type="CWeaponComponentInfo">
+            <Name>COMPONENT_MPX_STOCK_05</Name>
+            <Model>mpx_stock5</Model>
+            <LocName>"STOCK"</LocName>
+            <LocDesc>"STOCK"</LocDesc>
+            <AttachBone>AAPStock</AttachBone>
+            <WeaponAttachBone>WAPStock</WeaponAttachBone>
+            <AccuracyModifier type="NULL"/>
+            <DamageModifier type="NULL"/>
+            <bShownOnWheel value="true"/>
+            <CreateObject value="true"/>
+            <HudDamage value="0"/>
+            <HudSpeed value="0"/>
+            <HudCapacity value="0"/>
+            <HudAccuracy value="5"/>
+            <HudRange value="0"/>
+        </Item>
+        <Item type="CWeaponComponentInfo">
+            <Name>COMPONENT_MPX_STOCK_06</Name>
+            <Model>mpx_stock6</Model>
+            <LocName>"STOCK"</LocName>
+            <LocDesc>"STOCK"</LocDesc>
+            <AttachBone>AAPStock</AttachBone>
+            <WeaponAttachBone>WAPStock</WeaponAttachBone>
+            <AccuracyModifier type="NULL"/>
+            <DamageModifier type="NULL"/>
+            <bShownOnWheel value="true"/>
+            <CreateObject value="true"/>
+            <HudDamage value="0"/>
+            <HudSpeed value="0"/>
+            <HudCapacity value="0"/>
+            <HudAccuracy value="5"/>
+            <HudRange value="0"/>
+        </Item>
+        <Item type="CWeaponComponentInfo">
+            <Name>COMPONENT_MPX_STOCK_07</Name>
+            <Model>mpx_stock7</Model>
+            <LocName>"STOCK"</LocName>
+            <LocDesc>"STOCK"</LocDesc>
+            <AttachBone>AAPStock</AttachBone>
+            <WeaponAttachBone>WAPStock</WeaponAttachBone>
+            <AccuracyModifier type="NULL"/>
+            <DamageModifier type="NULL"/>
+            <bShownOnWheel value="true"/>
+            <CreateObject value="true"/>
+            <HudDamage value="0"/>
+            <HudSpeed value="0"/>
+            <HudCapacity value="0"/>
+            <HudAccuracy value="5"/>
+            <HudRange value="0"/>
+        </Item>
+        <Item type="CWeaponComponentInfo">
+            <Name>COMPONENT_MPX_STOCK_08</Name>
+            <Model>mpx_stock8</Model>
+            <LocName>"STOCK"</LocName>
+            <LocDesc>"STOCK"</LocDesc>
+            <AttachBone>AAPStock</AttachBone>
+            <WeaponAttachBone>WAPStock</WeaponAttachBone>
+            <AccuracyModifier type="NULL"/>
+            <DamageModifier type="NULL"/>
+            <bShownOnWheel value="true"/>
+            <CreateObject value="true"/>
+            <HudDamage value="0"/>
+            <HudSpeed value="0"/>
+            <HudCapacity value="0"/>
+            <HudAccuracy value="5"/>
+            <HudRange value="0"/>
+        </Item>
+        <Item type="CWeaponComponentInfo">
+            <Name>COMPONENT_MPX_STOCK_09</Name>
+            <Model>mpx_stock9</Model>
+            <LocName>"STOCK"</LocName>
+            <LocDesc>"STOCK"</LocDesc>
+            <AttachBone>AAPStock</AttachBone>
+            <WeaponAttachBone>WAPStock</WeaponAttachBone>
+            <AccuracyModifier type="NULL"/>
+            <DamageModifier type="NULL"/>
+            <bShownOnWheel value="true"/>
+            <CreateObject value="true"/>
+            <HudDamage value="0"/>
+            <HudSpeed value="0"/>
+            <HudCapacity value="0"/>
+            <HudAccuracy value="5"/>
+            <HudRange value="0"/>
+        </Item>
+        <Item type="CWeaponComponentInfo">
+            <Name>COMPONENT_MPX_STOCK_10</Name>
+            <Model>mpx_stock10</Model>
+            <LocName>"STOCK"</LocName>
+            <LocDesc>"STOCK"</LocDesc>
+            <AttachBone>AAPStock</AttachBone>
+            <WeaponAttachBone>WAPStock</WeaponAttachBone>
+            <AccuracyModifier type="NULL"/>
+            <DamageModifier type="NULL"/>
+            <bShownOnWheel value="true"/>
+            <CreateObject value="true"/>
+            <HudDamage value="0"/>
+            <HudSpeed value="0"/>
+            <HudCapacity value="0"/>
+            <HudAccuracy value="5"/>
+            <HudRange value="0"/>
+        </Item>
+	</Infos>
+	<InfoBlobName/>
+</CWeaponComponentInfoBlob>
+
