@@ -5,8 +5,8 @@
 		<Item>
 			<WeaponSlots>
 				<Item>
-					<OrderNumber value="417"/>
-					<Entry>SLOT_WEAPON_GROZA</Entry>
+					<OrderNumber value="418"/>
+					<Entry>SLOT_WEAPON_GEPARD</Entry>
 				</Item>
 			</WeaponSlots>
 		</Item>
@@ -15,10 +15,10 @@
 		<Item>
 			<Infos>
 				<Item type="CWeaponInfo">
-					<Name>WEAPON_GROZA</Name>
-					<Model>w_ar_groza</Model>
-					<Audio>AUDIO_ITEM_BULLPUP_RIFLE_MK2</Audio>
-					<Slot>SLOT_WEAPON_GROZA</Slot>
+					<Name>WEAPON_GEPARD</Name>
+					<Model>w_ar_gepard</Model>
+					<Audio>AUDIO_ITEM_ADVANCEDRIFLE</Audio>
+					<Slot>SLOT_WEAPON_GEPARD</Slot>
 					<DamageType>BULLET</DamageType>
 					<Explosion>
 						<Default>DONTCARE</Default>
@@ -49,7 +49,7 @@
 					<MinHeadShotDistancePlayer value="5.000000"/>
 					<MaxHeadShotDistancePlayer value="40.000000"/>
 					<HeadShotDamageModifierPlayer value="18.000000"/>
-					<Damage value="34.000000"/>
+					<Damage value="28.000000"/>
 					<DamageTime value="0.000000"/>
 					<DamageTimeInVehicle value="0.000000"/>
 					<DamageTimeInVehicleHeadShot value="0.000000"/>
@@ -242,7 +242,7 @@
 					<FirstPersonReticuleStyleHash/>
 					<PickupHash>PICKUP_WEAPON_ADVANCEDRIFLE</PickupHash>
 					<MPPickupHash>PICKUP_AMMO_BULLET_MP</MPPickupHash>
-					<HumanNameHash>WEAPON_GROZA</HumanNameHash>
+					<HumanNameHash>WEAPON_GEPARD</HumanNameHash>
 					<MovementModeConditionalIdle>MMI_2Handed_Short</MovementModeConditionalIdle>
 					<StatName>ADVRIFLE</StatName>
 					<KnockdownCount value="-1"/>
@@ -254,7 +254,7 @@
 							<Components>
 								<Item>
 									<Default value="true"/>
-									<Name>COMPONENT_GROZA_MAG1</Name>
+									<Name>COMPONENT_GEPARD_MAG1</Name>
 								</Item>
 							</Components>
 						</Item>

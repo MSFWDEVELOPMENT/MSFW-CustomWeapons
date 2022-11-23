@@ -5,8 +5,8 @@
 		<Item>
 			<WeaponSlots>
 				<Item>
-					<OrderNumber value="417"/>
-					<Entry>SLOT_WEAPON_GROZA</Entry>
+					<OrderNumber value="419"/>
+					<Entry>SLOT_WEAPON_G18C</Entry>
 				</Item>
 			</WeaponSlots>
 		</Item>
@@ -15,10 +15,10 @@
 		<Item>
 			<Infos>
 				<Item type="CWeaponInfo">
-					<Name>WEAPON_GROZA</Name>
-					<Model>w_ar_groza</Model>
-					<Audio>AUDIO_ITEM_BULLPUP_RIFLE_MK2</Audio>
-					<Slot>SLOT_WEAPON_GROZA</Slot>
+					<Name>WEAPON_G18C</Name>
+					<Model>w_pi_g18c</Model>
+					<Audio>AUDIO_ITEM_APPISTOL</Audio>
+					<Slot>SLOT_WEAPON_G18C</Slot>
 					<DamageType>BULLET</DamageType>
 					<Explosion>
 						<Default>DONTCARE</Default>
@@ -29,17 +29,17 @@
 						<HitPlane>DONTCARE</HitPlane>
 					</Explosion>
 					<FireType>INSTANT_HIT</FireType>
-					<WheelSlot>WHEEL_RIFLE</WheelSlot>
-					<Group>GROUP_RIFLE</Group>
-					<AmmoInfo ref="AMMO_RIFLE"/>
-					<AimingInfo ref="SMG_2H_BASE_STRAFE"/>
-					<ClipSize value="30"/>
-					<AccuracySpread value="2.500000"/>
+					<WheelSlot>WHEEL_PISTOL</WheelSlot>
+					<Group>GROUP_PISTOL</Group>
+					<AmmoInfo ref="AMMO_PISTOL"/>
+					<AimingInfo ref="PISTOL_2H_BASE_STRAFE"/>
+					<ClipSize value="18"/>
+					<AccuracySpread value="3.000000"/>
 					<AccurateModeAccuracyModifier value="0.500000"/>
 					<RunAndGunAccuracyModifier value="2.000000"/>
 					<RunAndGunAccuracyMaxModifier value="1.000000"/>
-					<RecoilAccuracyMax value="0.500000"/>
-					<RecoilErrorTime value="3.000000"/>
+					<RecoilAccuracyMax value="1.000000"/>
+					<RecoilErrorTime value="3.300000"/>
 					<RecoilRecoveryRate value="1.000000"/>
 					<RecoilAccuracyToAllowHeadShotAI value="1000.000000"/>
 					<MinHeadShotDistanceAI value="1000.000000"/>
@@ -49,27 +49,27 @@
 					<MinHeadShotDistancePlayer value="5.000000"/>
 					<MaxHeadShotDistancePlayer value="40.000000"/>
 					<HeadShotDamageModifierPlayer value="18.000000"/>
-					<Damage value="34.000000"/>
+					<Damage value="24.000000"/>
 					<DamageTime value="0.000000"/>
 					<DamageTimeInVehicle value="0.000000"/>
 					<DamageTimeInVehicleHeadShot value="0.000000"/>
 					<HitLimbsDamageModifier value="0.500000"/>
 					<NetworkHitLimbsDamageModifier value="0.800000"/>
 					<LightlyArmouredDamageModifier value="0.750000"/>
-					<Force value="75.000000"/>
+					<Force value="50.000000"/>
 					<ForceHitPed value="100.000000"/>
-					<ForceHitVehicle value="1300.000000"/>
-					<ForceHitFlyingHeli value="1250.000000"/>
+					<ForceHitVehicle value="750.000000"/>
+					<ForceHitFlyingHeli value="650.000000"/>
 					<OverrideForces>
 						<Item>
 							<BoneTag>BONETAG_HEAD</BoneTag>
-							<ForceFront value="80.000000"/>
+							<ForceFront value="100.000000"/>
 							<ForceBack value="70.000000"/>
 						</Item>
 						<Item>
 							<BoneTag>BONETAG_NECK</BoneTag>
-							<ForceFront value="50.000000"/>
-							<ForceBack value="70.000000"/>
+							<ForceFront value="60.000000"/>
+							<ForceBack value="80.000000"/>
 						</Item>
 						<Item>
 							<BoneTag>BONETAG_L_THIGH</BoneTag>
@@ -97,8 +97,8 @@
 					<ForceFalloffRangeEnd value="50.000000"/>
 					<ForceFalloffMin value="1.000000"/>
 					<ProjectileForce value="0.000000"/>
-					<FragImpulse value="600.000000"/>
-					<Penetration value="0.100000"/>
+					<FragImpulse value="250.000000"/>
+					<Penetration value="0.010000"/>
 					<VerticalLaunchAdjustment value="0.000000"/>
 					<DropForwardVelocity value="0.000000"/>
 					<Speed value="2000.000000"/>
@@ -109,7 +109,7 @@
 					<VehicleReloadTime value="1.000000"/>
 					<AnimReloadRate value="1.000000"/>
 					<BulletsPerAnimLoop value="1"/>
-					<TimeBetweenShots value="0.120000"/>
+					<TimeBetweenShots value="0.100000"/>
 					<TimeLeftBetweenShotsWhereShouldFireIsCached value="-1.000000"/>
 					<SpinUpTime value="0.000000"/>
 					<SpinTime value="0.000000"/>
@@ -122,33 +122,33 @@
 					<FirstPersonBulletBendingFarRadius value="0.750000"/>
 					<FirstPersonBulletBendingZoomedRadius value="0.375000"/>
 					<Fx>
-						<EffectGroup>WEAPON_EFFECT_GROUP_RIFLE_ASSAULT</EffectGroup>
-						<FlashFx>muz_assault_rifle</FlashFx>
-						<FlashFxAlt>muz_alternate_star</FlashFxAlt>
-						<FlashFxFP>muz_assault_rifle_fp</FlashFxFP>
+						<EffectGroup>WEAPON_EFFECT_GROUP_PISTOL_LARGE</EffectGroup>
+						<FlashFx>muz_pistol</FlashFx>
+						<FlashFxAlt/>
+						<FlashFxFP>muz_pistol_fp</FlashFxFP>
 						<FlashFxAltFP/>
 						<MuzzleSmokeFx>muz_smoking_barrel</MuzzleSmokeFx>
 						<MuzzleSmokeFxFP>muz_smoking_barrel_fp</MuzzleSmokeFxFP>
 						<MuzzleSmokeFxMinLevel value="0.300000"/>
 						<MuzzleSmokeFxIncPerShot value="0.100000"/>
-						<MuzzleSmokeFxDecPerSec value="0.250000"/>
-						<ShellFx>eject_auto</ShellFx>
-						<ShellFxFP>eject_auto_fp</ShellFxFP>
+						<MuzzleSmokeFxDecPerSec value="0.275000"/>
+						<ShellFx>eject_pistol</ShellFx>
+						<ShellFxFP>eject_pistol_fp</ShellFxFP>
 						<TracerFx>bullet_tracer</TracerFx>
 						<PedDamageHash>BulletLarge</PedDamageHash>
-						<TracerFxChanceSP value="0.150000"/>
+						<TracerFxChanceSP value="0.200000"/>
 						<TracerFxChanceMP value="0.750000"/>
 						<FlashFxChanceSP value="1.000000"/>
 						<FlashFxChanceMP value="1.000000"/>
-						<FlashFxAltChance value="0.200000"/>
-						<FlashFxScale value="1.000000"/>
+						<FlashFxAltChance value="0.000000"/>
+						<FlashFxScale value="0.800000"/>
 						<FlashFxLightEnabled value="true"/>
 						<FlashFxLightCastsShadows value="false"/>
 						<FlashFxLightOffsetDist value="0.000000"/>
 						<FlashFxLightRGBAMin x="255.000000" y="93.000000" z="25.000000"/>
 						<FlashFxLightRGBAMax x="255.000000" y="100.000000" z="50.000000"/>
 						<FlashFxLightIntensityMinMax x="1.000000" y="2.000000"/>
-						<FlashFxLightRangeMinMax x="2.500000" y="3.500000"/>
+						<FlashFxLightRangeMinMax x="2.00000" y="2.500000"/>
 						<FlashFxLightFalloffMinMax x="1024.000000" y="1536.000000"/>
 						<GroundDisturbFxEnabled value="false"/>
 						<GroundDisturbFxDist value="5.000000"/>
@@ -158,26 +158,26 @@
 						<GroundDisturbFxNameWater/>
 						<GroundDisturbFxNameFoliage/>
 					</Fx>
-					<InitialRumbleDuration value="150"/>
+					<InitialRumbleDuration value="125"/>
 					<InitialRumbleIntensity value="0.400000"/>
 					<InitialRumbleIntensityTrigger value="0.900000"/>
-					<RumbleDuration value="90"/>
-					<RumbleIntensity value="0.100000"/>
+					<RumbleDuration value="100"/>
+					<RumbleIntensity value="0.120000"/>
 					<RumbleIntensityTrigger value="0.700000"/>
 					<RumbleDamageIntensity value="1.000000"/>
-					<InitialRumbleDurationFps value="150"/>
+					<InitialRumbleDurationFps value="125"/>
 					<InitialRumbleIntensityFps value="1.000000"/>
-					<RumbleDurationFps value="95"/>
-					<RumbleIntensityFps value="1.000000"/>
+					<RumbleDurationFps value="100"/>
+					<RumbleIntensityFps value="0.820000"/>
 					<NetworkPlayerDamageModifier value="1.000000"/>
 					<NetworkPedDamageModifier value="1.000000"/>
-					<NetworkHeadShotPlayerDamageModifier value="1.700000"/>
-					<LockOnRange value="65.000000"/>
+					<NetworkHeadShotPlayerDamageModifier value="2.000000"/>
+					<LockOnRange value="55.000000"/>
 					<WeaponRange value="120.000000"/>
 					<BulletDirectionOffsetInDegrees value="0.000000"/>
 					<AiSoundRange value="-1.000000"/>
 					<AiPotentialBlastEventRange value="-1.000000"/>
-					<DamageFallOffRangeMin value="47.500000"/>
+					<DamageFallOffRangeMin value="40.000000"/>
 					<DamageFallOffRangeMax value="120.000000"/>
 					<DamageFallOffModifier value="0.300000"/>
 					<VehicleWeaponHash/>
@@ -189,121 +189,80 @@
 					<AlternativeOrScopedCameraHash/>
 					<RunAndGunAlternativeOrScopedCameraHash/>
 					<CinematicShootingAlternativeOrScopedCameraHash/>
-					<CameraFov value="35.000000"/>
-					<FirstPersonScopeFov value="20.00000"/>
-					<FirstPersonScopeAttachmentFov value="20.00000"/>
+					<CameraFov value="45.000000"/>
+					<FirstPersonScopeFov value="30.00000"/>
 					<FirstPersonRNGOffset x="0.000000" y="0.000000" z="0.000000"/>
 					<FirstPersonRNGRotationOffset x="0.000000" y="0.000000" z="0.000000"/>
 					<FirstPersonLTOffset x="0.000000" y="0.000000" z="0.000000"/>
 					<FirstPersonLTRotationOffset x="0.000000" y="0.000000" z="0.000000"/>
-					<FirstPersonScopeOffset x="0.00000" y="0.0300" z="0.0000"/>
-					<FirstPersonScopeAttachmentOffset x="0.00000" y="-0.03000" z="-0.02000"/>
-					<FirstPersonScopeRotationOffset x="-1.00000" y="0.0000" z="0.0000"/>
+					<FirstPersonScopeOffset x="0.00000" y="0.0000" z="0.0080"/>
+					<FirstPersonScopeAttachmentOffset x="0.00000" y="0.0000" z="0.0000"/>
+					<FirstPersonScopeRotationOffset x="-0.80000" y="0.0000" z="0.0000"/>
 					<FirstPersonScopeAttachmentRotationOffset x="0.00000" y="0.0000" z="0.0000"/>
-					<FirstPersonAsThirdPersonIdleOffset x="-0.07500000" y="0.000000" z="-0.05"/>
-					<FirstPersonAsThirdPersonRNGOffset x="-0.025000" y="0.000000" z="-0.075000"/>
-					<FirstPersonAsThirdPersonLTOffset x="0.025000" y="0.000000" z="-0.0750000"/>
-					<FirstPersonAsThirdPersonScopeOffset x="0.075000" y="-0.050000" z="-0.060000"/>
-					<FirstPersonAsThirdPersonWeaponBlockedOffset x="-0.1000000" y="0.000000" z="-0.100000"/>
-					<FirstPersonDofSubjectMagnificationPowerFactorNear value="1.055000"/>
+					<FirstPersonAsThirdPersonIdleOffset x="0.075" y="0.000000" z="0.000000"/>
+					<FirstPersonAsThirdPersonRNGOffset x="-0.025" y="-0.025" z="-0.040"/>
+					<FirstPersonAsThirdPersonLTOffset x="0.050" y="0.060" z="-0.0250"/>
+					<FirstPersonAsThirdPersonScopeOffset x="0.070" y="0.000000" z="-0.020"/>
+					<FirstPersonAsThirdPersonWeaponBlockedOffset x="0000000" y="0.000000" z="000000"/>
+					<FirstPersonDofSubjectMagnificationPowerFactorNear value="1.025000"/>
 					<FirstPersonDofMaxNearInFocusDistance value="0.000000"/>
 					<FirstPersonDofMaxNearInFocusDistanceBlendLevel value="0.300000"/>
 					<ZoomFactorForAccurateMode value="1.300000"/>
-					<RecoilShakeHash>ASSAULT_RIFLE_RECOIL_SHAKE</RecoilShakeHash>
-					<RecoilShakeHashFirstPerson>FPS_ASSAULT_RIFLE_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
-					<AccuracyOffsetShakeHash>DEFAULT_THIRD_PERSON_ACCURACY_OFFSET_SHAKE</AccuracyOffsetShakeHash>
-					<MinTimeBetweenRecoilShakes value="100"/>
-					<RecoilShakeAmplitude value="0.333000"/>
+					<RecoilShakeHash>PISTOL_RECOIL_SHAKE</RecoilShakeHash>
+					<RecoilShakeHashFirstPerson>FPS_SMG_RECOIL_SHAKE</RecoilShakeHashFirstPerson>
+					<AccuracyOffsetShakeHash/>
+					<MinTimeBetweenRecoilShakes value="80"/>
+					<RecoilShakeAmplitude value="0.500000"/>
 					<ExplosionShakeAmplitude value="-1.000000"/>
 					<ReticuleHudPosition x="0.000000" y="0.000000"/>
-					<AimOffsetMin x="0.150000" y="0.250000" z="0.475000"/>
-					<AimProbeLengthMin value="0.355000"/>
-					<AimOffsetMax x="0.175000" y="-0.200000" z="0.475000"/>
-					<AimProbeLengthMax value="0.295000"/>
-					<AimOffsetMinFPSIdle x="0.162000" y="0.225000" z="0.052000"/>
-					<AimOffsetMedFPSIdle x="0.187000" y="0.197000" z="0.321000"/>
-					<AimOffsetMaxFPSIdle x="0.155000" y="0.038000" z="0.364000"/>
-					<AimOffsetEndPosMinFPSIdle x="-0.084000" y="0.512000" z="-0.105000"/>
-					<AimOffsetEndPosMedFPSIdle x="-0.008000" y="0.539000" z="0.516000"/>
-					<AimOffsetEndPosMaxFPSIdle x="-0.01700" y="0.006000" z="0.987000"/>
-					<AimOffsetMinFPSLT x="0.180000" y="0.231000" z="0.669000"/>
-					<AimOffsetMaxFPSLT x="0.048000" y="-0.225000" z="0.409000"/>
-					<AimOffsetMinFPSRNG x="0.120000" y="0.275000" z="0.509000"/>
-					<AimOffsetMaxFPSRNG x="0.138000" y="-0.212000" z="0.518000"/>
-					<AimOffsetMinFPSScope x="0.090000" y="0.078000" z="0.531000"/>
-					<AimOffsetMaxFPSScope x="0.006000" y="-0.059000" z="0.694000"/>
-					<TorsoAimOffset x="-1.000000" y="0.550000"/>
-					<TorsoCrouchedAimOffset x="0.100000" y="0.120000"/>
-					<LeftHandIkOffset x="0.015000" y="0.095000" z="-0.008000"/>
-					<ReticuleMinSizeStanding value="0.600000"/>
-					<ReticuleMinSizeCrouched value="0.500000"/>
+					<AimOffsetMin x="0.215000" y="0.100000" z="0.600000"/>
+					<AimProbeLengthMin value="0.425000"/>
+					<AimOffsetMax x="0.165000" y="-0.225000" z="0.475000"/>
+					<AimProbeLengthMax value="0.335000"/>
+					<AimOffsetMinFPSIdle x="0.178000" y="0.392000" z="0.135000"/>
+					<AimOffsetMedFPSIdle x="0.169000" y="0.312000" z="0.420000"/>
+					<AimOffsetMaxFPSIdle x="0.187000" y="0.064000" z="0.649000"/>
+					<AimOffsetMinFPSLT x="0.009000" y="0.334000" z="0.555000"/>
+					<AimOffsetMaxFPSLT x="0.062000" y="-0.164000" z="0.588000"/>
+					<AimOffsetMinFPSRNG x="0.114000" y="0.390000" z="0.485000"/>
+					<AimOffsetMaxFPSRNG x="0.113000" y="-0.263000" z="0.586000"/>
+					<AimOffsetMinFPSScope x="0.009000" y="0.421000" z="0.462000"/>
+					<AimOffsetMaxFPSScope x="0.037000" y="-0.224000" z="0.639000"/>
+					<AimOffsetEndPosMinFPSIdle x="0.208000" y="0.700000" z="0.003000"/>
+					<AimOffsetEndPosMedFPSIdle x="0.203000" y="0.604000" z="0.553000"/>
+					<AimOffsetEndPosMaxFPSIdle x="0.207000" y="-0.040000" z="0.942000"/>
+					<TorsoAimOffset x="-1.300000" y="0.550000"/>
+					<TorsoCrouchedAimOffset x="0.200000" y="0.050000"/>
+					<LeftHandIkOffset x="0.000000" y="0.000000" z="0.000000"/>
+					<ReticuleMinSizeStanding value="0.650000"/>
+					<ReticuleMinSizeCrouched value="0.550000"/>
 					<ReticuleScale value="0.300000"/>
-					<ReticuleStyleHash>WEAPONTYPE_RIFLE</ReticuleStyleHash>
+					<ReticuleStyleHash>WEAPON_PISTOL</ReticuleStyleHash>
 					<FirstPersonReticuleStyleHash/>
-					<PickupHash>PICKUP_WEAPON_ADVANCEDRIFLE</PickupHash>
+					<PickupHash>PICKUP_WEAPON_APPISTOL</PickupHash>
 					<MPPickupHash>PICKUP_AMMO_BULLET_MP</MPPickupHash>
-					<HumanNameHash>WEAPON_GROZA</HumanNameHash>
-					<MovementModeConditionalIdle>MMI_2Handed_Short</MovementModeConditionalIdle>
-					<StatName>ADVRIFLE</StatName>
-					<KnockdownCount value="-1"/>
-					<KillshotImpulseScale value="1.000000"/>
-					<NmShotTuningSet>Automatic</NmShotTuningSet>
+					<HumanNameHash>WEAPON_G18C</HumanNameHash>
+					<MovementModeConditionalIdle>MMI_1Handed</MovementModeConditionalIdle>
+					<StatName>APPISTOL</StatName>
+					<KnockdownCount value="3"/>
+					<KillshotImpulseScale value="1.750000"/>
+					<NmShotTuningSet>BurstFire</NmShotTuningSet>
 					<AttachPoints>
 						<Item>
 							<AttachBone>WAPFlshLasr</AttachBone>
 							<Components>
 								<Item>
 									<Default value="true"/>
-									<Name>COMPONENT_GROZA_MAG1</Name>
-								</Item>
-							</Components>
-						</Item>
-						<Item>
-							<AttachBone>WAPClip</AttachBone>
-							<Components>
-								<Item>
-									<Name>COMPONENT_ADVANCEDRIFLE_CLIP_01</Name>
-									<Default value="true"/>
-								</Item>
-								<Item>
-									<Name>COMPONENT_ADVANCEDRIFLE_CLIP_02</Name>
-									<Default value="false"/>
-								</Item>
-							</Components>
-						</Item>
-						<Item>
-							<AttachBone>WAPFlshLasr</AttachBone>
-							<Components>
-								<Item>
-									<Name>COMPONENT_AT_AR_FLSH</Name>
-									<Default value="false"/>
-								</Item>
-							</Components>
-						</Item>
-						<Item>
-							<AttachBone>WAPScop</AttachBone>
-							<Components>
-								<Item>
-									<Name>COMPONENT_AT_SCOPE_SMALL</Name>
-									<Default value="false"/>
-								</Item>
-							</Components>
-						</Item>
-						<Item>
-							<AttachBone>WAPSupp</AttachBone>
-							<Components>
-								<Item>
-									<Name>COMPONENT_AT_AR_SUPP</Name>
-									<Default value="false"/>
+									<Name>COMPONENT_G18C_MAG1</Name>
 								</Item>
 							</Components>
 						</Item>
 					</AttachPoints>
 					<GunFeedBone/>
 					<TargetSequenceGroup/>
-					<WeaponFlags>CarriedInHand Automatic Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim TwoHanded AnimReload AnimCrouchFire UsableOnFoot UsableInCover AllowEarlyExitFromFireAnimAfterBulletFired NoLeftHandIKWhenBlocked AllowCloseQuarterKills HasLowCoverReloads HasLowCoverSwaps TorsoIKForWeaponBlock UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
+					<WeaponFlags>CarriedInHand Automatic Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim AnimReload AnimCrouchFire UsableOnFoot UsableClimbing UsableInCover AllowEarlyExitFromFireAnimAfterBulletFired AllowCloseQuarterKills HasLowCoverReloads HasLowCoverSwaps QuitTransitionToIdleIntroOnWeaponChange DisableLeftHandIkWhenOnFoot TorsoIKForWeaponBlock UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
 					<TintSpecValues ref="TINT_DEFAULT"/>
-					<FiringPatternAliases ref="FIRING_PATTERN_RIFLE"/>
+					<FiringPatternAliases ref="FIRING_PATTERN_PISTOL"/>
 					<ReloadUpperBodyFixupExpressionData ref="default"/>
 					<AmmoDiminishingRate value="3"/>
 					<AimingBreathingAdditiveWeight value="1.000000"/>
@@ -316,11 +275,11 @@
 					<StealthFiringLeanAdditiveWeight value="1.000000"/>
 					<ExpandPedCapsuleRadius value="0.000000"/>
 					<AudioCollisionHash/>
-					<HudDamage value="34"/>
-					<HudSpeed value="70"/>
-					<HudCapacity value="40"/>
-					<HudAccuracy value="50"/>
-					<HudRange value="45"/>
+					<HudDamage value="28"/>
+					<HudSpeed value="80"/>
+					<HudCapacity value="20"/>
+					<HudAccuracy value="45"/>
+					<HudRange value="30"/>
 				</Item>
 			</Infos>
 		</Item>
