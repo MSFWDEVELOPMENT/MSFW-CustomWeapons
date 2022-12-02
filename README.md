@@ -69,13 +69,13 @@ local weapons = {
 	'WEAPON_riftedge',
 	'WEAPON_m4a1',
 	'WEAPON_katana',
-    'WEAPON_keyboard',
-    'WEAPON_krambit',
-    'WEAPON_gepard',
-    'WEAPON_draco',
-    'WEAPON_g18c',
-    'WEAPON_glock20',
-    'WEAPON_mp5',
+    	'WEAPON_keyboard',
+    	'WEAPON_krambit',
+    	'WEAPON_gepard',
+    	'WEAPON_draco',
+    	'WEAPON_g18c',
+   	'WEAPON_glock20',
+    	'WEAPON_mp5',
 ```
 
 ## ADD THIS IN qb-smallresources/client/recoil.lua (LINE AROUND 108)
@@ -83,17 +83,17 @@ local weapons = {
 ```
 	-- GD-WEAPONS
 	[GetHashKey("weapon_groza")] = 0.5,
-    [GetHashKey("weapon_gepard")] = 0.5,
-    [GetHashKey("weapon_dragunov")] = 0.5,
+   	[GetHashKey("weapon_gepard")] = 0.5,
+    	[GetHashKey("weapon_dragunov")] = 0.5,
 	[GetHashKey("weapon_browning")] = 0.3,
 	[GetHashKey("weapon_dp9")] = 0.3,
 	[GetHashKey("weapon_m4a1")] = 0.3,
-    [GetHashKey("weapon_glock20")] = 0.3,
-    [GetHashKey("weapon_g18c")] = 0.3,
+    	[GetHashKey("weapon_glock20")] = 0.3,
+    	[GetHashKey("weapon_g18c")] = 0.3,
 	[GetHashKey("weapon_uzi")] = 0.4,
 	[GetHashKey("weapon_mac10")] = 0.4,
 	[GetHashKey("weapon_mp9")] = 0.4,
-    [GetHashKey("weapon_mp5")] = 0.4,
+    	[GetHashKey("weapon_mp5")] = 0.4,
 
 ```
 ## REPLACE THE NEXT CODE IN QB-JEWELERY/CONFIG.LUA
@@ -219,3 +219,5 @@ Config.WhitelistedWeapons = {
     [GetHashKey("weapon_mp5")] = "CLASS 2: MP5",
 
 ```
+
+# NOTE - 4-5 WEAPONS ARE TAKEN FROM GTA5 MODS AND IF YOU ARE THE OWNER OF THAT WEAPON AND YOU WANT IT TO BE REMOVED THEN YOU CAN COME TO OUR DISCORD AND TAK TO US AND IF ANYONE HAVE ANY INQURIE THEN THEY CAN JOIN OUR DISCORD 
