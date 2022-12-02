@@ -1,4 +1,6 @@
-## GD-CustomWeaponsV2
+## GD-CustomWeapons
+
+# WILL ADD COMPONENTS SOON...
 
 # CUSTOM WEAPONS FOR YOUR FIVEM SERVER 
 
