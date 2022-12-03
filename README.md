@@ -28,6 +28,7 @@
 	['weapon_gepard'] 				 = {['name'] = 'weapon_gepard', 			['label'] = 'GEPARD', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',		['image'] = 'weapon_gepard.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A small firearm designed to be held in one hand'},
 	['weapon_flashbang'] 			 = {['name'] = 'weapon_flashbang', 		    ['label'] = 'FLASHBANG', 		['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'nil',				['image'] = 'weapon_flashbang.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A handheld throwable bomb'},
     ['weapon_dragunov'] 			 = {['name'] = 'weapon_dragunov', 		    ['label'] = 'DRAGUNOV', 		['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SNIPER',				['image'] = 'weapon_dragunov.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A Sniper!'},
+    ['weapon_sword'] 		= {['name'] = 'weapon_sword', 			['label'] = 'SWORD', 		['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'nil',			    ['image'] = 'weapon_sword.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A BIG SWORD BIGGER THAN YOUR PP'},
     
 ```
 ## ADD THIS IN qb-core/shared/weapons.lua
@@ -50,6 +51,7 @@
     [`weapon_gepard`] 		 		 = {['name'] = 'weapon_gepard', 	 		['label'] = 'GEPARD', 						['weapontype'] = 'Assault Rifle',	['ammotype'] = 'AMMO_RIFLE',	['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
     [`weapon_krambit`] 			 	 = {['name'] = 'weapon_krambit', 		['label'] = 'KRAMBIT', 				['weapontype'] = 'Melee',	['ammotype'] = nil, ['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
 	[`weapon_keyboard`] 			 = {['name'] = 'weapon_keyboard', 		['label'] = 'KEYBOARD', 			['weapontype'] = 'Melee',	['ammotype'] = nil, ['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
+    [`weapon_sword`] 			     = {['name'] = 'weapon_sword', 		['label'] = 'SWORD', 			['weapontype'] = 'Melee',	['ammotype'] = nil, ['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
 
 ```
 
@@ -76,6 +78,7 @@ local weapons = {
     'WEAPON_g18c',
     'WEAPON_glock20',
     'WEAPON_mp5',
+    'weapon_sword',
 ```
 
 ## ADD THIS IN qb-smallresources/client/recoil.lua (LINE AROUND 108)
@@ -195,6 +198,7 @@ Config.WhitelistedWeapons = {
     [`WEAPON_riftedge`] = Config.WeaponClasses['CUTTING'],
     [`WEAPON_KATANA`] = Config.WeaponClasses['CUTTING'],
     [`WEAPON_krambit`] = Config.WeaponClasses['CUTTING'],
+    [`WEAPON_sword`] = Config.WeaponClasses['CUTTING'],
     --[[ HEAVY IMPACT ]]
     [`WEAPON_dildo`] = Config.WeaponClasses['HEAVY_IMPACT'],
     [`WEAPON_keyboard`] = Config.WeaponClasses['HEAVY_IMPACT'],
