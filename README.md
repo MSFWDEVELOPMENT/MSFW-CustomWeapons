@@ -27,7 +27,6 @@
 	['weapon_draco'] 				 = {['name'] = 'weapon_draco', 			 	['label'] = 'DRACO', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',		['image'] = 'weapon_draco.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A small firearm designed to be held in one hand'},
 	['weapon_gepard'] 				 = {['name'] = 'weapon_gepard', 			['label'] = 'GEPARD', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',		['image'] = 'weapon_gepard.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A small firearm designed to be held in one hand'},
 	['weapon_flashbang'] 			 = {['name'] = 'weapon_flashbang', 		    ['label'] = 'FLASHBANG', 		['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'nil',				['image'] = 'weapon_flashbang.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A handheld throwable bomb'},
-    ['weapon_dragunov'] 			 = {['name'] = 'weapon_dragunov', 		    ['label'] = 'DRAGUNOV', 		['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SNIPER',				['image'] = 'weapon_dragunov.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A Sniper!'},
     ['weapon_sword'] 		= {['name'] = 'weapon_sword', 			['label'] = 'SWORD', 		['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'nil',			    ['image'] = 'weapon_sword.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A BIG SWORD BIGGER THAN YOUR PP'},
     
 ```
@@ -87,7 +86,6 @@ local weapons = {
 	-- GD-WEAPONS
 	[GetHashKey("weapon_groza")] = 0.5,
     [GetHashKey("weapon_gepard")] = 0.5,
-    [GetHashKey("weapon_dragunov")] = 0.5,
 	[GetHashKey("weapon_browning")] = 0.3,
 	[GetHashKey("weapon_dp9")] = 0.3,
 	[GetHashKey("weapon_m4a1")] = 0.3,
@@ -159,9 +157,6 @@ Config.WhitelistedWeapons = {
         ["timeOut"] = 10000
     },
     [`weapon_mp5`] = {
-        ["timeOut"] = 10000
-    },
-    [`weapon_dragunov`] = {
         ["timeOut"] = 10000
     },
     [`weapon_browning`] = {
