@@ -28,7 +28,9 @@
 	['weapon_gepard'] 				 = {['name'] = 'weapon_gepard', 			['label'] = 'GEPARD', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',		['image'] = 'weapon_gepard.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A small firearm designed to be held in one hand'},
 	['weapon_flashbang'] 			 = {['name'] = 'weapon_flashbang', 		    ['label'] = 'FLASHBANG', 		['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'nil',				['image'] = 'weapon_flashbang.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A handheld throwable bomb'},
     ['weapon_sword'] 		= {['name'] = 'weapon_sword', 			['label'] = 'SWORD', 		['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'nil',			    ['image'] = 'weapon_sword.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A BIG SWORD BIGGER THAN YOUR PP'},
-    
+    ['weapon_beanbag'] 				 = {['name'] = 'weapon_beanbag', 			['label'] = 'BEANBAG', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SHOTGUN',		['image'] = 'weapon_beanbag.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A small firearm designed to be held in one hand'},
+    ['weapon_m67'] 				 = {['name'] = 'weapon_m67', 			['label'] = 'M67', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'nil',		['image'] = 'weapon_m67.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A GRENDAEEEE!'},
+
 ```
 ## ADD THIS IN qb-core/shared/weapons.lua
 
@@ -51,6 +53,7 @@
     [`weapon_krambit`] 			 	 = {['name'] = 'weapon_krambit', 		['label'] = 'KRAMBIT', 				['weapontype'] = 'Melee',	['ammotype'] = nil, ['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
 	[`weapon_keyboard`] 			 = {['name'] = 'weapon_keyboard', 		['label'] = 'KEYBOARD', 			['weapontype'] = 'Melee',	['ammotype'] = nil, ['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
     [`weapon_sword`] 			     = {['name'] = 'weapon_sword', 		['label'] = 'SWORD', 			['weapontype'] = 'Melee',	['ammotype'] = nil, ['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
+    [`weapon_m67`] 		        	= {['name'] = 'weapon_m67', 			['label'] = 'M67', 				['weapontype'] = 'Throwable',	['ammotype'] = nil,				['damagereason'] = 'Bombed / Exploded / Detonated / Blew up'},
 
 ```
 
@@ -70,14 +73,16 @@ local weapons = {
 	'WEAPON_riftedge',
 	'WEAPON_m4a1',
 	'WEAPON_katana',
-    	'WEAPON_keyboard',
-    	'WEAPON_krambit',
-    	'WEAPON_gepard',
-    	'WEAPON_draco',
-    	'WEAPON_g18c',
-    	'WEAPON_glock20',
-    	'WEAPON_mp5',
-    	'weapon_sword',
+    'WEAPON_keyboard',
+    'WEAPON_krambit',
+    'WEAPON_gepard',
+    'WEAPON_draco',
+    'WEAPON_g18c',
+    'WEAPON_glock20',
+    'WEAPON_mp5',
+    'weapon_sword',
+    'WEAPON_M67',
+    'WEAPON_BEANBAG',
 ```
 
 ## ADD THIS IN qb-smallresources/client/recoil.lua (LINE AROUND 108)
@@ -85,16 +90,17 @@ local weapons = {
 ```
 	-- GD-WEAPONS
 	[GetHashKey("weapon_groza")] = 0.5,
-    	[GetHashKey("weapon_gepard")] = 0.5,
+    [GetHashKey("weapon_gepard")] = 0.5,
 	[GetHashKey("weapon_browning")] = 0.3,
 	[GetHashKey("weapon_dp9")] = 0.3,
 	[GetHashKey("weapon_m4a1")] = 0.3,
-    	[GetHashKey("weapon_glock20")] = 0.3,
+    [GetHashKey("weapon_glock20")] = 0.3,
    	[GetHashKey("weapon_g18c")] = 0.3,
 	[GetHashKey("weapon_uzi")] = 0.4,
 	[GetHashKey("weapon_mac10")] = 0.4,
 	[GetHashKey("weapon_mp9")] = 0.4,
-    	[GetHashKey("weapon_mp5")] = 0.4,
+    [GetHashKey("weapon_mp5")] = 0.4,
+    [GetHashKey("weapon_beanbag")] = 0.1,
 
 ```
 ## REPLACE THE NEXT CODE IN QB-JEWELERY/CONFIG.LUA
@@ -197,7 +203,10 @@ Config.WhitelistedWeapons = {
     --[[ HEAVY IMPACT ]]
     [`WEAPON_dildo`] = Config.WeaponClasses['HEAVY_IMPACT'],
     [`WEAPON_keyboard`] = Config.WeaponClasses['HEAVY_IMPACT'],
-
+    --[[Explosives]]--
+    [`WEAPON_M67`] = Config.WeaponClasses['EXPLOSIVE'],
+    --[[ Shotguns ]]--
+    [`WEAPON_BEANBAG`] = Config.WeaponClasses['SHOTGUN'],
 ```
 # ADD THIS IN BACKITEMS.LUA IF USING DEVYN-BACKITEMS 
 
@@ -241,16 +250,6 @@ Config.WhitelistedWeapons = {
         x_rotation = 0.0,
         y_rotation = -180.0,
         z_rotation = 0.0,
-    },
-    ["weapon_"] = {
-        model="w_sr_mk14",
-        back_bone = 24818,
-        x = 0.0,
-        y = -0.17,
-        z = -0.12,
-        x_rotation = 0.0,
-        y_rotation = -180.0,
-        z_rotation = 180.0,
     },
     ["weapon_gepard"] = {
         model="w_ar_gepard",
@@ -322,6 +321,16 @@ Config.WhitelistedWeapons = {
 	y_rotation = -120.0,
 	z_rotation = 180.0,
     },
+    ["weapon_beanbag"] = {
+        model="w_sg_beanbag",
+        back_bone = 24818,
+        x = -0.0,
+        y = -0.17,
+        z = 0.08,
+        x_rotation = 0.0,
+        y_rotation = -180.0,
+        z_rotation = 180.0,
+    },
     
 ```
 
@@ -341,5 +350,6 @@ Config.WhitelistedWeapons = {
     [GetHashKey("weapon_uzi")] = "CLASS 2: Uzi",
     [GetHashKey("weapon_mp9")] = "CLASS 2: MP9",
     [GetHashKey("weapon_mp5")] = "CLASS 2: MP5",
+    [GetHashKey("weapon_m67")] = "CLASS 69: M67 GRENADE",
 
 ```
