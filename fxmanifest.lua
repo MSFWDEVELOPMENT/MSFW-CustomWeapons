@@ -14,3 +14,5 @@ data_file 'PED_PERSONALITY_FILE' 'metas/**/pedpersonality.meta'
 data_file 'WEAPONINFO_FILE' 'metas/**/dp9.meta'
 data_file 'WEAPONINFO_FILE' 'metas/**/browning.meta'
 data_file 'WEAPONINFO_FILE' 'metas/**/weapons.meta'
+
+client_script 'cl_weaponNames.lua'
