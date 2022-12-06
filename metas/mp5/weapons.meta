@@ -5,7 +5,7 @@
 		<Item>
 			<WeaponSlots>
 				<Item>
-					<OrderNumber value="416"/>
+					<OrderNumber value="404"/>
 					<Entry>SLOT_WEAPON_MP5</Entry>
 				</Item>
 			</WeaponSlots>
@@ -250,11 +250,11 @@
 					<NmShotTuningSet>Mini</NmShotTuningSet>
 					<AttachPoints>
 						<Item>
-							<AttachBone>WAPFlshLasr</AttachBone>
+							<AttachBone>WAPClip</AttachBone>
 							<Components>
 								<Item>
 									<Default value="true"/>
-									<Name>COMPONENT_MP5_MAG1</Name>
+									<Name>COMPONENT_SMG_CLIP_01</Name>
 								</Item>
 							</Components>
 						</Item>
