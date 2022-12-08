@@ -8,7 +8,7 @@
 ## ADD THIS IN qb-core/shared/items.lua
 
 ```
-    --GD-WEAPONS
+        --GD-WEAPONS
     ['weapon_browning'] 		     = {['name'] = 'weapon_browning', 			['label'] = 'BROWNING', 		['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',		['image'] = 'weapon_browning.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'VERY POWERFULL PISTOL!'},
 	['weapon_glock20'] 		     	 = {['name'] = 'weapon_glock20', 			['label'] = 'GLOCK-20', 		['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',		['image'] = 'weapon_glock20.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'Police Glock'},
     ['weapon_dp9'] 				     = {['name'] = 'weapon_dp9', 			 	['label'] = 'DP9', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',		['image'] = 'weapon_dp9.png', 			['unique'] = true, 		['useable'] = false, 	['description'] = 'POW POW'},
@@ -30,7 +30,6 @@
 	['weapon_flashbang'] 			 = {['name'] = 'weapon_flashbang', 		    ['label'] = 'FLASHBANG', 		['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'nil',				['image'] = 'weapon_flashbang.png', 	['unique'] = true, 		['useable'] = false, 	['description'] = 'BLINDED'},
 	['weapon_beanbag'] 			     = {['name'] = 'weapon_beanbag', 	 	  	['label'] = 'BEANBAG', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SHOTGUN',		['image'] = 'weapon_beanbag.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A shotgun? no!'},
 	['weapon_m67'] 				 	 = {['name'] = 'weapon_m67', 		    	['label'] = 'M67', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = nil,					['image'] = 'weapon_m67.png', 			['unique'] = true, 		['useable'] = false, 	['description'] = 'A GRENADEEE'},
-    
 ```
 ## ADD THIS IN qb-core/shared/weapons.lua
 
