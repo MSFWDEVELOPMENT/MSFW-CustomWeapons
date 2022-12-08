@@ -27,18 +27,14 @@
 	['weapon_sword'] 			 	 = {['name'] = 'weapon_sword', 				['label'] = 'SWORD', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'nil',			    ['image'] = 'weapon_sword.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A small firearm designed to be held in one hand'},
 	['weapon_draco'] 				 = {['name'] = 'weapon_draco', 			 	['label'] = 'DRACO', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',		['image'] = 'weapon_draco.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A small firearm designed to be held in one hand'},
 	['weapon_gepard'] 				 = {['name'] = 'weapon_gepard', 			['label'] = 'GEPARD', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',		['image'] = 'weapon_gepard.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A small firearm designed to be held in one hand'},
-<<<<<<< HEAD
 	['weapon_flashbang'] 			 = {['name'] = 'weapon_flashbang', 		    ['label'] = 'FLASHBANG', 		['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'nil',				['image'] = 'weapon_flashbang.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A handheld throwable bomb'},
     ['weapon_sword'] 		= {['name'] = 'weapon_sword', 			['label'] = 'SWORD', 		['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'nil',			    ['image'] = 'weapon_sword.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A BIG SWORD BIGGER THAN YOUR PP'},
     ['weapon_beanbag'] 				 = {['name'] = 'weapon_beanbag', 			['label'] = 'BEANBAG', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SHOTGUN',		['image'] = 'weapon_beanbag.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A small firearm designed to be held in one hand'},
     ['weapon_m67'] 				 = {['name'] = 'weapon_m67', 			['label'] = 'M67', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'nil',		['image'] = 'weapon_m67.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A GRENDAEEEE!'},
-
-=======
 	['weapon_flashbang'] 			 = {['name'] = 'weapon_flashbang', 		    ['label'] = 'FLASHBANG', 		['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'nil',				['image'] = 'weapon_flashbang.png', 	['unique'] = true, 		['useable'] = false, 	['description'] = 'A handheld throwable bomb'},
 	['weapon_beanbag'] 			     = {['name'] = 'weapon_beanbag', 	 	  	['label'] = 'BEANBAG', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SHOTGUN',		['image'] = 'weapon_beanbag.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A pump-action smoothbore gun for firing small shot at short range'},
 	['weapon_m67'] 				 	 = {['name'] = 'weapon_m67', 		    	['label'] = 'M67', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = nil,					['image'] = 'weapon_m67.png', 			['unique'] = true, 		['useable'] = false, 	['description'] = 'A handheld throwable bomb'},
     
->>>>>>> ee74274f50e87020d210d6d50d8c6f1b7cad51e1
 ```
 ## ADD THIS IN qb-core/shared/weapons.lua
 
