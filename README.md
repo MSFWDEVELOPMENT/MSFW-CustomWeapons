@@ -30,6 +30,7 @@
 	['weapon_flashbang'] 			 = {['name'] = 'weapon_flashbang', 		    ['label'] = 'FLASHBANG', 		['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'nil',				['image'] = 'weapon_flashbang.png', 	['unique'] = true, 		['useable'] = false, 	['description'] = 'BLINDED'},
 	['weapon_beanbag'] 			     = {['name'] = 'weapon_beanbag', 	 	  	['label'] = 'BEANBAG', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SHOTGUN',		['image'] = 'weapon_beanbag.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A shotgun? no!'},
 	['weapon_m67'] 				 	 = {['name'] = 'weapon_m67', 		    	['label'] = 'M67', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = nil,					['image'] = 'weapon_m67.png', 			['unique'] = true, 		['useable'] = false, 	['description'] = 'A GRENADEEE'},
+    ['weapon_m4'] 				 = {['name'] = 'weapon_m4', 			['label'] = 'M4', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',		['image'] = 'weapon_gepard.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'Police M4'},
 ```
 ## ADD THIS IN qb-core/shared/weapons.lua
 
@@ -53,6 +54,7 @@
 	[`weapon_keyboard`] 			 = {['name'] = 'weapon_keyboard', 		['label'] = 'KEYBOARD', 			['weapontype'] = 'Melee',	['ammotype'] = nil, ['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
     [`weapon_sword`] 			     = {['name'] = 'weapon_sword', 		['label'] = 'SWORD', 			['weapontype'] = 'Melee',	['ammotype'] = nil, ['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
     [`weapon_m67`] 		        	= {['name'] = 'weapon_m67', 			['label'] = 'M67', 				['weapontype'] = 'Throwable',	['ammotype'] = nil,				['damagereason'] = 'Bombed / Exploded / Detonated / Blew up'},
+    [`weapon_m4`] 		 		 = {['name'] = 'weapon_m4', 	 		['label'] = 'M4', 						['weapontype'] = 'Assault Rifle',	['ammotype'] = 'AMMO_RIFLE',	['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
 
 ```
 
@@ -82,6 +84,7 @@ local weapons = {
     'weapon_sword',
     'WEAPON_M67',
     'WEAPON_BEANBAG',
+    'WEAPON_M4',
 ```
 
 ## ADD THIS IN qb-smallresources/client/recoil.lua (LINE AROUND 108)
@@ -90,6 +93,7 @@ local weapons = {
 	-- GD-WEAPONS
 	[GetHashKey("weapon_groza")] = 0.5,
     [GetHashKey("weapon_gepard")] = 0.5,
+    [GetHashKey("weapon_m4")] = 0.4,
 	[GetHashKey("weapon_browning")] = 0.3,
 	[GetHashKey("weapon_dp9")] = 0.3,
 	[GetHashKey("weapon_m4a1")] = 0.3,
@@ -173,6 +177,9 @@ Config.WhitelistedWeapons = {
     [`weapon_m4a1`] = {
         ["timeOut"] = 10000
     },
+    [`weapon_m4`] = {
+        ["timeOut"] = 10000
+    },
 }
 
 ```
@@ -183,6 +190,7 @@ Config.WhitelistedWeapons = {
     [`WEAPON_groza`] = Config.WeaponClasses['HIGH_CALIBER'],
     [`WEAPON_gepard`] = Config.WeaponClasses['HIGH_CALIBER'],
     [`WEAPON_draco`] = Config.WeaponClasses['HIGH_CALIBER'],
+    [`WEAPON_m4`] = Config.WeaponClasses['HIGH_CALIBER'],
     --[[ MEDIUM CALIBER ]]
     [`WEAPON_uzi`] = Config.WeaponClasses['MEDIUM_CALIBER'],
     [`WEAPON_mac10`] = Config.WeaponClasses['MEDIUM_CALIBER'],
@@ -322,6 +330,16 @@ Config.WhitelistedWeapons = {
     },
     ["weapon_beanbag"] = {
         model="w_sg_beanbag",
+        back_bone = 24818,
+        x = -0.0,
+        y = -0.17,
+        z = 0.08,
+        x_rotation = 0.0,
+        y_rotation = -180.0,
+        z_rotation = 180.0,
+    },
+    ["weapon_m4"] = {
+        model="w_ar_m4",
         back_bone = 24818,
         x = -0.0,
         y = -0.17,
