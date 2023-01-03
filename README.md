@@ -87,6 +87,30 @@ local weapons = {
     'WEAPON_M4',
 ```
 
+# ADD THIS IN qb-weapons/config.lua
+
+```
+['WEAPON_uzi'] 			    = 0.15,
+['WEAPON_mac10'] 	        = 0.15,
+['WEAPON_groza'] 			= 0.15,
+['WEAPON_mp9'] 		        = 0.15,
+['WEAPON_dp9'] 			    = 0.15,
+['WEAPON_browning'] 	    = 0.15,
+['WEAPON_dildo'] 		    = 0.15,
+['WEAPON_riftedge'] 	    = 0.15,
+['WEAPON_katana'] 	        = 0.15,
+['WEAPON_keyboard'] 	    = 0.15,
+['WEAPON_krambit'] 	        = 0.15,
+['WEAPON_gepard'] 			= 0.15,
+['WEAPON_draco'] 		    = 0.15,
+['WEAPON_g18c'] 		    = 0.15,
+['weapon_sword'] 	        = 0.15,
+['WEAPON_BEANBAG'] 	        = 0.15,
+['WEAPON_mp5'] 		        = 0.15,
+['WEAPON_M67'] 		        = 0.15,
+
+```
+
 ## ADD THIS IN qb-smallresources/client/recoil.lua (LINE AROUND 108)
 
 ```
