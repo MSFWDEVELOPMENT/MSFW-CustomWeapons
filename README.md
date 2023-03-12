@@ -31,6 +31,7 @@
 	['weapon_beanbag'] 			     = {['name'] = 'weapon_beanbag', 	 	  	['label'] = 'BEANBAG', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SHOTGUN',		['image'] = 'weapon_beanbag.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A shotgun? no!'},
 	['weapon_m67'] 				 	 = {['name'] = 'weapon_m67', 		    	['label'] = 'M67', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = nil,					['image'] = 'weapon_m67.png', 			['unique'] = true, 		['useable'] = false, 	['description'] = 'A GRENADEEE'},
     ['weapon_m4'] 				 = {['name'] = 'weapon_m4', 			['label'] = 'M4', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',		['image'] = 'weapon_gepard.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'Police M4'},
+    ['weapon_m45a1'] 				 = {['name'] = 'weapon_m45a1', 			 	['label'] = 'M45A1', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',		['image'] = 'weapon_m4a1.png', 			['unique'] = true, 		['useable'] = false, 	['description'] = 'HMM THIS LOOKS POWERFULL!!'},
 ```
 ## ADD THIS IN qb-core/shared/weapons.lua
 
@@ -55,6 +56,7 @@
     [`weapon_sword`] 			     = {['name'] = 'weapon_sword', 		['label'] = 'SWORD', 			['weapontype'] = 'Melee',	['ammotype'] = nil, ['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
     [`weapon_m67`] 		        	= {['name'] = 'weapon_m67', 			['label'] = 'M67', 				['weapontype'] = 'Throwable',	['ammotype'] = nil,				['damagereason'] = 'Bombed / Exploded / Detonated / Blew up'},
     [`weapon_m4`] 		 		 = {['name'] = 'weapon_m4', 	 		['label'] = 'M4', 						['weapontype'] = 'Assault Rifle',	['ammotype'] = 'AMMO_RIFLE',	['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
+    [`weapon_m45a1`] 				 = {['name'] = 'weapon_m45a1', 			['label'] = 'M45A1', 				['weapontype'] = 'Pistol',			['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'}
 
 ```
 
@@ -85,6 +87,7 @@ local weapons = {
     'WEAPON_M67',
     'WEAPON_BEANBAG',
     'WEAPON_M4',
+    'WEAPON_M45A1',
 ```
 
 # ADD THIS IN qb-weapons/config.lua
@@ -108,6 +111,7 @@ local weapons = {
 ['WEAPON_BEANBAG'] 	        = 0.15,
 ['WEAPON_mp5'] 		        = 0.15,
 ['WEAPON_M67'] 		        = 0.15,
+['WEAPON_m45a1'] 		    = 0.15,
 
 ```
 
@@ -121,6 +125,7 @@ local weapons = {
 	[GetHashKey("weapon_browning")] = 0.3,
 	[GetHashKey("weapon_dp9")] = 0.3,
 	[GetHashKey("weapon_m4a1")] = 0.3,
+    [GetHashKey("weapon_m45a1")] = 0.3,
     [GetHashKey("weapon_glock20")] = 0.3,
    	[GetHashKey("weapon_g18c")] = 0.3,
 	[GetHashKey("weapon_uzi")] = 0.4,
@@ -201,6 +206,9 @@ Config.WhitelistedWeapons = {
     [`weapon_m4a1`] = {
         ["timeOut"] = 10000
     },
+    [`weapon_m45a1`] = {
+        ["timeOut"] = 10000
+    },
     [`weapon_m4`] = {
         ["timeOut"] = 10000
     },
@@ -223,6 +231,7 @@ Config.WhitelistedWeapons = {
     --[[ SMALL CALIBER ]]
     [`WEAPON_browning`] = Config.WeaponClasses['SMALL_CALIBER'],
     [`WEAPON_M4a1`] = Config.WeaponClasses['SMALL_CALIBER'],
+    [`WEAPON_M45a1`] = Config.WeaponClasses['SMALL_CALIBER'],
     [`WEAPON_dp9`] = Config.WeaponClasses['SMALL_CALIBER'],
     [`WEAPON_g18c`] = Config.WeaponClasses['SMALL_CALIBER'],
     [`WEAPON_glock20`] = Config.WeaponClasses['SMALL_CALIBER'],
@@ -386,11 +395,49 @@ Config.WhitelistedWeapons = {
     [GetHashKey("weapon_dp9")] = "CLASS 2: DP9",
     [GetHashKey("weapon_g18c")] = "CLASS 2: GLOCK-18C",
     [GetHashKey("weapon_glock20")] = "CLASS 2: GLOCK-20",
-    [GetHashKey("weapon_m4a1")] = "CLASS 1: M4A1",
+    [GetHashKey("weapon_m4a1")] = "CLASS 1: M4A1"
+    [GetHashKey("weapon_m45a1")] = "CLASS 1: M4A1",
     [GetHashKey("weapon_mac10")] = "CLASS 2: Mac-10",
     [GetHashKey("weapon_uzi")] = "CLASS 2: Uzi",
     [GetHashKey("weapon_mp9")] = "CLASS 2: MP9",
     [GetHashKey("weapon_mp5")] = "CLASS 2: MP5",
     [GetHashKey("weapon_m67")] = "CLASS 69: M67 GRENADE",
 
+```
+## Drop the next code in qb-weapons/config.lua (about line 209)
+
+```
+    ['WEAPON_m45a1'] = {
+        ['defaultclip'] = {
+            component = 'COMPONENT_M45A1_CLIP_01',
+            item = 'pistol_defaultclip',
+            type = 'clip',
+        },
+        ['extendedclip'] = {
+            component = 'COMPONENT_M45A1_CLIP_02',
+            item = 'pistol_extendedclip',
+            type = 'clip',
+        },
+        ['suppressor'] = {
+            component = 'COMPONENT_M45A1_SUPP_01',
+            item = 'pistol_suppressor',
+        },
+        ['flashlight'] = {
+            component = 'COMPONENT_M45A1_FLSH_01',
+            item = 'pistol_suppressor',
+        },
+    },
+
+```
+
+## ADD THIS IN QB-CORE/SHARED/ITEMS.LUA                      (ADD THIS IF YOU USING COMPONENTS)
+
+```
+['m45a1_defaultclip'] 			 = {['name'] = 'm45a1_defaultclip', 			['label'] = 'M45A1 Clip', 				['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pistol_extendedclip.png', 	['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'm45a1 Default Clip'},
+
+['m45a1_extendedclip'] 		 = {['name'] = 'm45a1_extendedclip', 			['label'] = 'M45A1 EXT Clip', 			['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pistol_extendedclip.png', 	['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'm45a1 Extended Clip'},
+
+['m45a1_flashlight'] 			 = {['name'] = 'm45a1_flashlight', 			['label'] = 'M45A1 Flashlight', 		['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'smg_flashlight.png', 		['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'm45a1 Flashlight Attachment'},
+
+['m45a1_suppressor'] 			 = {['name'] = 'm45a1_suppressor', 			['label'] = 'M45A1 Suppressor', 		['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pistol_suppressor.png', 	['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'm45a1 Suppressor Attachment'},
 ```

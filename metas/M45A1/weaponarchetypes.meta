@@ -3,20 +3,32 @@
 <CWeaponModelInfo__InitDataList>
 	<InitDatas>
 		<Item>
-			<modelName>w_pi_m4a1_mag2</modelName>
-			<txdName>w_pi_m4a1_mag2</txdName>
+			<modelName>m45a1</modelName>
+			<txdName>m45a1</txdName>
 			<ptfxAssetName>NULL</ptfxAssetName>
-			<lodDist value="300"/>
+			<lodDist value="500"/>
 		</Item>
 		<Item>
-			<modelName>w_pi_m4a1_mag1</modelName>
-			<txdName>w_pi_m4a1_mag1</txdName>
+			<modelName>m45a1_mag1</modelName>
+			<txdName>m45a1_mag1</txdName>
 			<ptfxAssetName>NULL</ptfxAssetName>
-			<lodDist value="300"/>
+			<lodDist value="500"/>
 		</Item>
 		<Item>
-			<modelName>w_pi_m4a1</modelName>
-			<txdName>w_pi_m4a1</txdName>
+			<modelName>m45a1_mag2</modelName>
+			<txdName>m45a1_mag2</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+		<Item>
+			<modelName>m45a1_flsh</modelName>
+			<txdName>m45a1_flsh</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+		<Item>
+			<modelName>m45a1_supp</modelName>
+			<txdName>m45a1_supp</txdName>
 			<ptfxAssetName>NULL</ptfxAssetName>
 			<lodDist value="500"/>
 		</Item>

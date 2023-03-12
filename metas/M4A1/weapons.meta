@@ -6,7 +6,7 @@
 			<WeaponSlots>
 				<Item>
 					<OrderNumber value="408"/>
-					<Entry>SLOT_WEAPON_M45A1</Entry>
+					<Entry>SLOT_WEAPON_M4A1</Entry>
 				</Item>
 			</WeaponSlots>
 		</Item>
@@ -15,10 +15,10 @@
 		<Item>
 			<Infos>
 				<Item type="CWeaponInfo">
-					<Name>WEAPON_M45A1</Name>
-					<Model>m45a1</Model>
-					<Audio>AUDIO_ITEM_HEAVYPISTOL</Audio>
-					<Slot>SLOT_WEAPON_M45A1</Slot>
+					<Name>WEAPON_M4A1</Name>
+					<Model>w_pi_m4a1</Model>
+					<Audio>AUDIO_ITEM_COMBATPISTOL</Audio>
+					<Slot>SLOT_WEAPON_M4A1</Slot>
 					<DamageType>BULLET</DamageType>
 					<Explosion>
 						<Default>DONTCARE</Default>
@@ -33,7 +33,7 @@
 					<Group>GROUP_PISTOL</Group>
 					<AmmoInfo ref="AMMO_PISTOL"/>
 					<AimingInfo ref="PISTOL_2H_BASE_STRAFE"/>
-					<ClipSize value="8"/>
+					<ClipSize value="12"/>
 					<AccuracySpread value="1.500000"/>
 					<AccurateModeAccuracyModifier value="0.500000"/>
 					<RunAndGunAccuracyModifier value="2.000000"/>
@@ -49,7 +49,7 @@
 					<MinHeadShotDistancePlayer value="5.000000"/>
 					<MaxHeadShotDistancePlayer value="40.000000"/>
 					<HeadShotDamageModifierPlayer value="20.000000"/>
-					<Damage value="32.000000"/>
+					<Damage value="27.000000"/>
 					<DamageTime value="0.000000"/>
 					<DamageTimeInVehicle value="0.000000"/>
 					<DamageTimeInVehicleHeadShot value="0.000000"/>
@@ -58,17 +58,17 @@
 					<LightlyArmouredDamageModifier value="0.750000"/>
 					<Force value="50.000000"/>
 					<ForceHitPed value="125.000000"/>
-					<ForceHitVehicle value="750.000000"/>
-					<ForceHitFlyingHeli value="750.000000"/>
+					<ForceHitVehicle value="600.000000"/>
+					<ForceHitFlyingHeli value="650.000000"/>
 					<OverrideForces>
 						<Item>
 							<BoneTag>BONETAG_HEAD</BoneTag>
 							<ForceFront value="100.000000"/>
-							<ForceBack value="80.000000"/>
+							<ForceBack value="100.000000"/>
 						</Item>
 						<Item>
 							<BoneTag>BONETAG_NECK</BoneTag>
-							<ForceFront value="60.000000"/>
+							<ForceFront value="70.000000"/>
 							<ForceBack value="70.000000"/>
 						</Item>
 						<Item>
@@ -158,16 +158,16 @@
 						<GroundDisturbFxNameWater/>
 						<GroundDisturbFxNameFoliage/>
 					</Fx>
-					<InitialRumbleDuration value="150"/>
+					<InitialRumbleDuration value="160"/>
 					<InitialRumbleIntensity value="0.200000"/>
-					<InitialRumbleIntensityTrigger value="0.850000"/>
-					<RumbleDuration value="95"/>
+					<InitialRumbleIntensityTrigger value="0.900000"/>
+					<RumbleDuration value="90"/>
 					<RumbleIntensity value="0.200000"/>
-					<RumbleIntensityTrigger value="0.800000"/>
+					<RumbleIntensityTrigger value="0.850000"/>
 					<RumbleDamageIntensity value="1.000000"/>
-					<InitialRumbleDurationFps value="150"/>
+					<InitialRumbleDurationFps value="160"/>
 					<InitialRumbleIntensityFps value="1.000000"/>
-					<RumbleDurationFps value="95"/>
+					<RumbleDurationFps value="90"/>
 					<RumbleIntensityFps value="1.000000"/>
 					<NetworkPlayerDamageModifier value="1.000000"/>
 					<NetworkPedDamageModifier value="1.000000"/>
@@ -195,15 +195,15 @@
 					<FirstPersonRNGRotationOffset x="0.000000" y="0.000000" z="0.000000"/>
 					<FirstPersonLTOffset x="0.000000" y="0.000000" z="0.000000"/>
 					<FirstPersonLTRotationOffset x="0.000000" y="0.000000" z="0.000000"/>
-					<FirstPersonScopeOffset x="0.00000" y="0.0000" z="0.0010"/>
+					<FirstPersonScopeOffset x="-0.00200" y="0.0000" z="0.0050"/>
 					<FirstPersonScopeAttachmentOffset x="0.00000" y="0.0000" z="0.0000"/>
-					<FirstPersonScopeRotationOffset x="-0.30000" y="0.0000" z="0.0000"/>
+					<FirstPersonScopeRotationOffset x="-0.50000" y="0.0000" z="0.0000"/>
 					<FirstPersonScopeAttachmentRotationOffset x="0.00000" y="0.0000" z="0.0000"/>
 					<FirstPersonAsThirdPersonIdleOffset x="0.075" y="0.000000" z="0.000000"/>
 					<FirstPersonAsThirdPersonRNGOffset x="-0.025" y="-0.025" z="-0.040"/>
 					<FirstPersonAsThirdPersonLTOffset x="0.050" y="0.060" z="-0.0250"/>
 					<FirstPersonAsThirdPersonScopeOffset x="0.070" y="0.000000" z="-0.020"/>
-					<FirstPersonAsThirdPersonWeaponBlockedOffset x="000000" y="0.000000" z="000000"/>
+					<FirstPersonAsThirdPersonWeaponBlockedOffset x="000000" y="0.000000" z="00000"/>
 					<FirstPersonDofSubjectMagnificationPowerFactorNear value="1.025000"/>
 					<FirstPersonDofMaxNearInFocusDistance value="0.000000"/>
 					<FirstPersonDofMaxNearInFocusDistanceBlendLevel value="0.300000"/>
@@ -214,15 +214,15 @@
 					<MinTimeBetweenRecoilShakes value="150"/>
 					<RecoilShakeAmplitude value="1.000000"/>
 					<ExplosionShakeAmplitude value="-1.000000"/>
-					<IkRecoilDisplacement value="0.01"/>
+					<IkRecoilDisplacement value="0.005"/>
 					<IkRecoilDisplacementScope value="0.005"/>
 					<IkRecoilDisplacementScaleBackward value="1.0"/>
 					<IkRecoilDisplacementScaleVertical value="0.4"/>
 					<ReticuleHudPosition x="0.000000" y="0.000000"/>
-					<AimOffsetMin x="0.200000" y="0.100000" z="0.600000"/>
-					<AimProbeLengthMin value="0.300000"/>
-					<AimOffsetMax x="0.175000" y="-0.200000" z="0.500000"/>
-					<AimProbeLengthMax value="0.275000"/>
+					<AimOffsetMin x="0.225000" y="0.100000" z="0.600000"/>
+					<AimProbeLengthMin value="0.375000"/>
+					<AimOffsetMax x="0.170000" y="-0.200000" z="0.525000"/>
+					<AimProbeLengthMax value="0.285000"/>
 					<AimOffsetMinFPSIdle x="0.178000" y="0.392000" z="0.135000"/>
 					<AimOffsetMedFPSIdle x="0.169000" y="0.312000" z="0.420000"/>
 					<AimOffsetMaxFPSIdle x="0.187000" y="0.064000" z="0.649000"/>
@@ -243,25 +243,21 @@
 					<ReticuleScale value="0.300000"/>
 					<ReticuleStyleHash>WEAPON_PISTOL</ReticuleStyleHash>
 					<FirstPersonReticuleStyleHash/>
-					<PickupHash>PICKUP_WEAPON_PISTOL</PickupHash>
+					<PickupHash>PICKUP_WEAPON_COMBATPISTOL</PickupHash>
 					<MPPickupHash>PICKUP_AMMO_BULLET_MP</MPPickupHash>
-					<HumanNameHash>WEAPON_M45A1</HumanNameHash>
+					<HumanNameHash>WEAPON_M4A1</HumanNameHash>
 					<MovementModeConditionalIdle>MMI_1Handed</MovementModeConditionalIdle>
-					<StatName>PISTOL</StatName>
+					<StatName>CMBTPISTOL</StatName>
 					<KnockdownCount value="3"/>
 					<KillshotImpulseScale value="1.000000"/>
 					<NmShotTuningSet>Normal</NmShotTuningSet>
 					<AttachPoints>
 						<Item>
-							<AttachBone>WAPClip</AttachBone>
+							<AttachBone>WAPFlshLasr</AttachBone>
 							<Components>
 								<Item>
 									<Default value="true"/>
-									<Name>COMPONENT_M45A1_CLIP_01</Name>
-								</Item>
-								<Item>
-									<Default value="false"/>
-									<Name>COMPONENT_M45A1_CLIP_02</Name>
+									<Name>COMPONENT_AT_M4A1_02</Name>
 								</Item>
 							</Components>
 						</Item>
@@ -269,23 +265,14 @@
 							<AttachBone>WAPFlshLasr</AttachBone>
 							<Components>
 								<Item>
-									<Default value="false"/>
-									<Name>COMPONENT_M45A1_FLSH_01</Name>
-								</Item>
-							</Components>
-						</Item>
-						<Item>
-							<AttachBone>WAPSupp</AttachBone>
-							<Components>
-								<Item>
-									<Default value="false"/>
-									<Name>COMPONENT_M45A1_SUPP_01</Name>
+									<Default value="true"/>
+									<Name>COMPONENT_M4A1_01</Name>
 								</Item>
 							</Components>
 						</Item>
 					</AttachPoints>
 					<GunFeedBone/>
-					<TargetSequenceGroup>PISTOL</TargetSequenceGroup>
+					<TargetSequenceGroup/>
 					<WeaponFlags>CarriedInHand Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim AnimReload AnimCrouchFire UsableOnFoot UsableClimbing UsableInCover AllowCloseQuarterKills HasLowCoverReloads HasLowCoverSwaps QuitTransitionToIdleIntroOnWeaponChange DisableLeftHandIkWhenOnFoot TorsoIKForWeaponBlock UseFPSAimIK UseFPSSecondaryMotion</WeaponFlags>
 					<TintSpecValues ref="TINT_DEFAULT"/>
 					<FiringPatternAliases ref="FIRING_PATTERN_PISTOL"/>
@@ -301,11 +288,11 @@
 					<StealthFiringLeanAdditiveWeight value="1.000000"/>
 					<ExpandPedCapsuleRadius value="0.000000"/>
 					<AudioCollisionHash/>
-					<HudDamage value="26"/>
+					<HudDamage value="27"/>
 					<HudSpeed value="40"/>
 					<HudCapacity value="10"/>
-					<HudAccuracy value="40"/>
-					<HudRange value="25"/>
+					<HudAccuracy value="50"/>
+					<HudRange value="30"/>
 				</Item>
 			</Infos>
 		</Item>
