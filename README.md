@@ -40,7 +40,7 @@
 	[`weapon_dildo`] 				 = {['name'] = 'weapon_dildo', 			['label'] = 'Dildo', 				['weapontype'] = 'Melee',			['ammotype'] = nil, 			['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
 	[`weapon_katana`] 				 = {['name'] = 'weapon_katana', 		['label'] = 'katana', 				['weapontype'] = 'Melee',			['ammotype'] = nil, 			['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
 	[`weapon_riftedge`] 			 = {['name'] = 'weapon_riftedge', 		['label'] = 'riftedge', 			['weapontype'] = 'Melee',			['ammotype'] = nil, 			['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
-	[`weapon_browning`] 			 = {['name'] = 'weapon_browning', 		['label'] = 'BROWNING', 			['eapontype'] = 'Pistol',			['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
+	[`weapon_browning`] 			 = {['name'] = 'weapon_browning', 		['label'] = 'BROWNING', 			['weapontype'] = 'Pistol',			['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
 	[`weapon_dp9`] 				 	 = {['name'] = 'weapon_dp9', 			['label'] = 'DP9', 				   	['weapontype'] = 'Pistol',			['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
 	[`weapon_m4a1`] 				 = {['name'] = 'weapon_m4a1', 			['label'] = 'M4A1', 				['weapontype'] = 'Pistol',			['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
 	[`weapon_groza`] 		 		 = {['name'] = 'weapon_groza', 	 		['label'] = 'GROZA', 				['weapontype'] = 'Assault Rifle',	['ammotype'] = 'AMMO_RIFLE',	['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
