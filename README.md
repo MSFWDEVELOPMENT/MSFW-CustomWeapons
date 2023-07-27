@@ -10,7 +10,7 @@
 ```
         --GD-WEAPONS
     ['weapon_browning'] 		     = {['name'] = 'weapon_browning', 			['label'] = 'BROWNING', 		['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',		['image'] = 'weapon_browning.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'VERY POWERFULL PISTOL!'},
-	['weapon_glock20'] 		     	 = {['name'] = 'weapon_glock20', 			['label'] = 'GLOCK-20', 		['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',		['image'] = 'weapon_glock20.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'Police Glock'},
+	['weapon_glock22'] 		     	 = {['name'] = 'weapon_glock22', 			['label'] = 'GLOCK-20', 		['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',		['image'] = 'weapon_glock20.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'Police Glock'},
     ['weapon_dp9'] 				     = {['name'] = 'weapon_dp9', 			 	['label'] = 'DP9', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',		['image'] = 'weapon_dp9.png', 			['unique'] = true, 		['useable'] = false, 	['description'] = 'POW POW'},
     ['weapon_uzi'] 				     = {['name'] = 'weapon_uzi', 			 	['label'] = 'UZI', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SMG',			['image'] = 'weapon_uzi.png', 			['unique'] = true, 		['useable'] = false, 	['description'] = 'USE THIS IN A WAR , LMAO YOU GOT NO AIM'},
     ['weapon_mac10'] 				 = {['name'] = 'weapon_mac10', 			 	['label'] = 'MAC-10', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SMG',			['image'] = 'weapon_mac10.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'SMALL UZI?'},
@@ -48,7 +48,7 @@
 	[`weapon_mac10`] 			 	 = {['name'] = 'weapon_mac10', 			['label'] = 'MAC-10', 				['weapontype'] = 'Submachine Gun',	['ammotype'] = 'AMMO_SMG',		['damagereason'] = 'Riddled / Drilled / Finished / Submachine Gunned'},
 	[`weapon_mp9`] 			 		 = {['name'] = 'weapon_mp9', 			['label'] = 'MP9', 					['weapontype'] = 'Submachine Gun',	['ammotype'] = 'AMMO_SMG',		['damagereason'] = 'Riddled / Drilled / Finished / Submachine Gunned'},
     [`weapon_mp5`] 			 		 = {['name'] = 'weapon_mp5', 			['label'] = 'MP5', 					['weapontype'] = 'Submachine Gun',	['ammotype'] = 'AMMO_SMG',		['damagereason'] = 'Riddled / Drilled / Finished / Submachine Gunned'},
-    [`weapon_glock20`] 				 = {['name'] = 'weapon_glock20', 		['label'] = 'GLOCK-20', 				['weapontype'] = 'Pistol',	['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
+    [`weapon_glock22`] 				 = {['name'] = 'weapon_glock22', 		['label'] = 'GLOCK-20', 				['weapontype'] = 'Pistol',	['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
 	[`weapon_g18c`] 				 = {['name'] = 'weapon_g18c', 			['label'] = 'GLOCK-18C', 				['weapontype'] = 'Pistol',	['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
     [`weapon_gepard`] 		 		 = {['name'] = 'weapon_gepard', 	 		['label'] = 'GEPARD', 						['weapontype'] = 'Assault Rifle',	['ammotype'] = 'AMMO_RIFLE',	['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
     [`weapon_krambit`] 			 	 = {['name'] = 'weapon_krambit', 		['label'] = 'KRAMBIT', 				['weapontype'] = 'Melee',	['ammotype'] = nil, ['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
@@ -81,7 +81,7 @@ local weapons = {
     'WEAPON_gepard',
     'WEAPON_draco',
     'WEAPON_g18c',
-    'WEAPON_glock20',
+    'WEAPON_glock22',
     'WEAPON_mp5',
     'weapon_sword',
     'WEAPON_M67',
@@ -126,7 +126,7 @@ local weapons = {
 	[GetHashKey("weapon_dp9")] = 0.3,
 	[GetHashKey("weapon_m4a1")] = 0.3,
     [GetHashKey("weapon_m45a1")] = 0.3,
-    [GetHashKey("weapon_glock20")] = 0.3,
+    [GetHashKey("weapon_glock22")] = 0.3,
    	[GetHashKey("weapon_g18c")] = 0.3,
 	[GetHashKey("weapon_uzi")] = 0.4,
 	[GetHashKey("weapon_mac10")] = 0.4,
@@ -234,7 +234,7 @@ Config.WhitelistedWeapons = {
     [`WEAPON_M45a1`] = Config.WeaponClasses['SMALL_CALIBER'],
     [`WEAPON_dp9`] = Config.WeaponClasses['SMALL_CALIBER'],
     [`WEAPON_g18c`] = Config.WeaponClasses['SMALL_CALIBER'],
-    [`WEAPON_glock20`] = Config.WeaponClasses['SMALL_CALIBER'],
+    [`WEAPON_glock22`] = Config.WeaponClasses['SMALL_CALIBER'],
     --[[ CUTTING ]]
     [`WEAPON_riftedge`] = Config.WeaponClasses['CUTTING'],
     [`WEAPON_KATANA`] = Config.WeaponClasses['CUTTING'],
@@ -394,7 +394,7 @@ Config.WhitelistedWeapons = {
     [GetHashKey("weapon_browning")] = "CLASS 2: BROWNING",
     [GetHashKey("weapon_dp9")] = "CLASS 2: DP9",
     [GetHashKey("weapon_g18c")] = "CLASS 2: GLOCK-18C",
-    [GetHashKey("weapon_glock20")] = "CLASS 2: GLOCK-20",
+    [GetHashKey("weapon_glock22")] = "CLASS 2: GLOCK-20",
     [GetHashKey("weapon_m4a1")] = "CLASS 1: M4A1"
     [GetHashKey("weapon_m45a1")] = "CLASS 1: M4A1",
     [GetHashKey("weapon_mac10")] = "CLASS 2: Mac-10",
