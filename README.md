@@ -32,6 +32,7 @@
 	['weapon_m67'] 				 	 = {['name'] = 'weapon_m67', 		    	['label'] = 'M67', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = nil,					['image'] = 'weapon_m67.png', 			['unique'] = true, 		['useable'] = false, 	['description'] = 'A GRENADEEE'},
     ['weapon_m4'] 				 = {['name'] = 'weapon_m4', 			['label'] = 'M4', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',		['image'] = 'weapon_gepard.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'Police M4'},
     ['weapon_m45a1'] 				 = {['name'] = 'weapon_m45a1', 			 	['label'] = 'M45A1', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',		['image'] = 'weapon_m4a1.png', 			['unique'] = true, 		['useable'] = false, 	['description'] = 'HMM THIS LOOKS POWERFULL!!'},
+    ['weapon_vector'] 				     = {['name'] = 'weapon_vector', 			 	['label'] = 'KRISS VECTOR', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SMG',			['image'] = 'weapon_vector.png', 			['unique'] = true, 		['useable'] = false, 	['description'] = 'A BETTER VERSION OF SMG'},
 ```
 ## ADD THIS IN qb-core/shared/weapons.lua
 
@@ -57,14 +58,13 @@
     [`weapon_m67`] 		        	= {['name'] = 'weapon_m67', 			['label'] = 'M67', 				['weapontype'] = 'Throwable',	['ammotype'] = nil,				['damagereason'] = 'Bombed / Exploded / Detonated / Blew up'},
     [`weapon_m4`] 		 		 = {['name'] = 'weapon_m4', 	 		['label'] = 'M4', 						['weapontype'] = 'Assault Rifle',	['ammotype'] = 'AMMO_RIFLE',	['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
     [`weapon_m45a1`] 				 = {['name'] = 'weapon_m45a1', 			['label'] = 'M45A1', 				['weapontype'] = 'Pistol',			['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'}
+    [`weapon_vector`] 			 		 = {['name'] = 'weapon_vector', 			['label'] = 'KRISS VECTOR', 					['weapontype'] = 'Submachine Gun',	['ammotype'] = 'AMMO_SMG',		['damagereason'] = 'Riddled / Drilled / Finished / Submachine Gunned'},
 
 ```
 
 ## ADD THIS IN qb-smallresources/client/weapdraw.lua
 
 ```
-local weapons = {
-
 	-- GD-Weapons
 	'WEAPON_uzi',
 	'WEAPON_mac10',
@@ -88,6 +88,7 @@ local weapons = {
     'WEAPON_BEANBAG',
     'WEAPON_M4',
     'WEAPON_M45A1',
+    'weapon_vector',
 ```
 
 # ADD THIS IN qb-weapons/config.lua
@@ -112,6 +113,7 @@ local weapons = {
 ['WEAPON_mp5'] 		        = 0.15,
 ['WEAPON_M67'] 		        = 0.15,
 ['WEAPON_m45a1'] 		    = 0.15,
+['weapon_vector']           = 0.15,
 
 ```
 
@@ -133,6 +135,7 @@ local weapons = {
 	[GetHashKey("weapon_mp9")] = 0.4,
     [GetHashKey("weapon_mp5")] = 0.4,
     [GetHashKey("weapon_beanbag")] = 0.1,
+    [GetHashKey("weapon_vector")] = 0.3,
 
 ```
 ## REPLACE THE NEXT CODE IN QB-JEWELERY/CONFIG.LUA
@@ -212,6 +215,9 @@ Config.WhitelistedWeapons = {
     [`weapon_m4`] = {
         ["timeOut"] = 10000
     },
+    [`weapon_vector`] = {
+        ["timeOut"] = 10000
+    },
 }
 
 ```
@@ -228,6 +234,7 @@ Config.WhitelistedWeapons = {
     [`WEAPON_mac10`] = Config.WeaponClasses['MEDIUM_CALIBER'],
     [`WEAPON_mp9`] = Config.WeaponClasses['MEDIUM_CALIBER'],
     [`WEAPON_mp5`] = Config.WeaponClasses['MEDIUM_CALIBER'],
+    [`weapon_vector`] = Config.WeaponClasses['MEDIUM_CALIBER'],
     --[[ SMALL CALIBER ]]
     [`WEAPON_browning`] = Config.WeaponClasses['SMALL_CALIBER'],
     [`WEAPON_M4a1`] = Config.WeaponClasses['SMALL_CALIBER'],
@@ -402,6 +409,7 @@ Config.WhitelistedWeapons = {
     [GetHashKey("weapon_mp9")] = "CLASS 2: MP9",
     [GetHashKey("weapon_mp5")] = "CLASS 2: MP5",
     [GetHashKey("weapon_m67")] = "CLASS 69: M67 GRENADE",
+    [GetHashKey("weapon_vector")] = "CLASS 2: KRISS VECTOR",
 
 ```
 ## Drop the next code in qb-weapons/config.lua (about line 209)
