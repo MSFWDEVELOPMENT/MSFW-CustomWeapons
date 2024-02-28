@@ -1,7 +1,9 @@
 fx_version 'cerulean'
 games {'gta5'}
 
-author 'GodsDeveopment'
+author 'MSFW DEVELOPMENT'
+description 'MSFW CUSTOM WEAPONS'
+version '1.1'
 
 files{
 	'metas/**/*.meta'
