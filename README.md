@@ -38,6 +38,166 @@
     ['weapon_p226'] 				     = {['name'] = 'weapon_p226', 			 	['label'] = 'Pistol P226', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_pistol',			['image'] = 'weapon_p226.png', 			['unique'] = true, 		['useable'] = false, 	['description'] = ''},
     ['weapon_hk416b'] 				     = {['name'] = 'weapon_hk416b', 			 	['label'] = 'HK416-B', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'weapon_hk416b.png', 			['unique'] = true, 		['useable'] = false, 	['description'] = ''},
 ```
+
+## OX INVENTORY (ADD THIS IN ox_inventory/data/weapons.lua)
+
+```
+        ['WEAPON_beanbag'] = {
+			label = 'Bean Bag',
+			weight = 1500,
+			durability = 0.075,
+			ammoname = 'ammo-shotgun',
+		},
+        ['weapon_browning'] = {
+			label = 'Browing',
+			weight = 1500,
+			durability = 0.075,
+			ammoname = 'ammo-9',
+		},
+        ['weapon_glock22'] = {
+			label = 'GLOCK-22',
+			weight = 1500,
+			durability = 0.075,
+			ammoname = 'ammo-9',
+		},
+        ['weapon_dp9'] = {
+			label = 'DP9',
+			weight = 1500,
+			durability = 0.075,
+			ammoname = 'ammo-9',
+		},
+        ['weapon_uzi'] = {
+			label = 'UZI',
+			weight = 1500,
+			durability = 0.075,
+			ammoname = 'ammo-9',
+		},
+        ['weapon_mac10'] = {
+			label = 'MAC10',
+			weight = 1500,
+			durability = 0.075,
+			ammoname = 'ammo-9',
+		},
+        ['weapon_mp9'] = {
+			label = 'MP9',
+			weight = 1500,
+			durability = 0.075,
+			ammoname = 'ammo-9',
+		},
+        ['weapon_mp5'] = {
+			label = 'MP5',
+			weight = 1500,
+			durability = 0.075,
+			ammoname = 'ammo-rifle',
+		},
+        ['weapon_groza'] = {
+			label = 'GROZA',
+			weight = 1500,
+			durability = 0.075,
+			ammoname = 'ammo-rifle',
+		},
+        ['weapon_m4a1'] = {
+			label = 'M4A1',
+			weight = 1500,
+			durability = 0.075,
+			ammoname = 'ammo-9',
+		},
+        ['weapon_g18c'] = {
+			label = 'G18-C',
+			weight = 1500,
+			durability = 0.075,
+			ammoname = 'ammo-9',
+		},
+        ['weapon_draco'] = {
+			label = 'Draco',
+			weight = 1500,
+			durability = 0.075,
+			ammoname = 'ammo-rifle',
+		},
+        ['weapon_gepard'] = {
+			label = 'Gepard',
+			weight = 1500,
+			durability = 0.075,
+			ammoname = 'ammo-rifle',
+		},
+        ['weapon_m4'] = {
+			label = 'M4',
+			weight = 1500,
+			durability = 0.075,
+			ammoname = 'ammo-rifle',
+		},
+        ['weapon_vector'] = {
+			label = 'Vector',
+			weight = 1500,
+			durability = 0.075,
+			ammoname = 'ammo-rifle',
+		},
+        ['weapon_HK416B'] = {
+			label = 'HK416-B',
+			weight = 1500,
+			durability = 0.075,
+			ammoname = 'ammo-rifle',
+		},
+        ['weapon_tec9'] = {
+			label = 'TEC-9',
+			weight = 1500,
+			durability = 0.075,
+			ammoname = 'ammo-9',
+		},
+        ['weapon_p226'] = {
+			label = 'P226',
+			weight = 1500,
+			durability = 0.075,
+			ammoname = 'ammo-9',
+		},
+        ['weapon_m45a1'] = {
+			label = 'M45A1',
+			weight = 1500,
+			durability = 0.075,
+			ammoname = 'ammo-9',
+		},
+        ['WEAPON_M67'] = {
+			label = 'M67',
+			weight = 149,
+			throwable = true,
+		},
+        ['WEAPON_dildo'] = {
+			label = 'Dildo',
+			weight = 6500,
+			durability = 0.1,
+		},
+        ['weapon_sledgehammer'] = {
+			label = 'Sledgehammer',
+			weight = 6500,
+			durability = 0.1,
+		},
+        ['weapon_katana'] = {
+			label = 'katana',
+			weight = 6500,
+			durability = 0.1,
+		},
+        ['weapon_keyboard'] = {
+			label = 'Keyboard',
+			weight = 6500,
+			durability = 0.1,
+		},
+        ['weapon_riftedge'] = {
+			label = 'Riftedge',
+			weight = 6500,
+			durability = 0.1,
+		},
+        ['weapon_krambit'] = {
+			label = 'Krambit',
+			weight = 6500,
+			durability = 0.1,
+		},
+        ['weapon_sword'] = {
+			label = 'Sword',
+			weight = 6500,
+			durability = 0.1,
+		},
+```
+
 ## ADD THIS IN qb-core/shared/weapons.lua
 
 ```
