@@ -1,4 +1,4 @@
-## GD-CustomWeaponsV2
+## MSFW-CustomWeapons
 
 # CUSTOM WEAPONS FOR YOUR FIVEM SERVER 
 
