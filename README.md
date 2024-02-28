@@ -17,6 +17,7 @@
     ['weapon_mp9'] 				     = {['name'] = 'weapon_mp9', 			 	['label'] = 'MP9', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SMG',			['image'] = 'weapon_mp9.png', 			['unique'] = true, 		['useable'] = false, 	['description'] = 'SMOKE EM'},
 	['weapon_mp5'] 				     = {['name'] = 'weapon_mp5', 			 	['label'] = 'MP5', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SMG',			['image'] = 'weapon_mp5.png', 			['unique'] = true, 		['useable'] = false, 	['description'] = 'A BETTER VERSION OF SMG'},
     ['weapon_dildo'] 				 = {['name'] = 'weapon_dildo', 			 	['label'] = 'DILDO', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'nil',			    ['image'] = 'weapon_dildo.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'YOU CAN GIVE THIS TO YOUR GIRLFRIEND'},
+    ['weapon_sledgehammer'] 				 = {['name'] = 'weapon_sledgehammer', 			 	['label'] = 'Sledgehammer', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'nil',			    ['image'] = 'weapon_dildo.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A BIG HAMMER'},
     ['weapon_groza'] 				 = {['name'] = 'weapon_groza', 			 	['label'] = 'GROZA', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',		['image'] = 'weapon_groza.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'LETS PLAY PUBG WITH THIS'},
     ['weapon_katana'] 				 = {['name'] = 'weapon_katana', 			['label'] = 'KATANA', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'nil',			    ['image'] = 'weapon_katana.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A BIG SWORD TO CUT PEOPLE HEAD OR PP'},
 	['weapon_keyboard'] 			 = {['name'] = 'weapon_keyboard', 			['label'] = 'KEYBOARD', 		['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'nil',			    ['image'] = 'weapon_keyboard.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'YOU CAN USE THIS TO HIT YOUR SON xD'},
@@ -33,6 +34,9 @@
     ['weapon_m4'] 				 = {['name'] = 'weapon_m4', 			['label'] = 'M4', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',		['image'] = 'weapon_gepard.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'Police M4'},
     ['weapon_m45a1'] 				 = {['name'] = 'weapon_m45a1', 			 	['label'] = 'M45A1', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',		['image'] = 'weapon_m4a1.png', 			['unique'] = true, 		['useable'] = false, 	['description'] = 'HMM THIS LOOKS POWERFULL!!'},
     ['weapon_vector'] 				     = {['name'] = 'weapon_vector', 			 	['label'] = 'KRISS VECTOR', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SMG',			['image'] = 'weapon_vector.png', 			['unique'] = true, 		['useable'] = false, 	['description'] = 'A BETTER VERSION OF SMG'},
+    ['weapon_tec9'] 				     = {['name'] = 'weapon_tec9', 			 	['label'] = 'Tec 9', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_pistol',			['image'] = 'weapon_tec9.png', 			['unique'] = true, 		['useable'] = false, 	['description'] = ''},
+    ['weapon_p226'] 				     = {['name'] = 'weapon_p226', 			 	['label'] = 'Pistol P226', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_pistol',			['image'] = 'weapon_p226.png', 			['unique'] = true, 		['useable'] = false, 	['description'] = ''},
+    ['weapon_hk416b'] 				     = {['name'] = 'weapon_hk416b', 			 	['label'] = 'HK416-B', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'weapon_hk416b.png', 			['unique'] = true, 		['useable'] = false, 	['description'] = ''},
 ```
 ## ADD THIS IN qb-core/shared/weapons.lua
 
@@ -41,8 +45,11 @@
 	[`weapon_dildo`] 				 = {['name'] = 'weapon_dildo', 			['label'] = 'Dildo', 				['weapontype'] = 'Melee',			['ammotype'] = nil, 			['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
 	[`weapon_katana`] 				 = {['name'] = 'weapon_katana', 		['label'] = 'katana', 				['weapontype'] = 'Melee',			['ammotype'] = nil, 			['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
 	[`weapon_riftedge`] 			 = {['name'] = 'weapon_riftedge', 		['label'] = 'riftedge', 			['weapontype'] = 'Melee',			['ammotype'] = nil, 			['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
+    [`weapon_sledgehammer`] 			 = {['name'] = 'weapon_sledgehammer', 		['label'] = 'Sledgehammer', 			['weapontype'] = 'Melee',			['ammotype'] = nil, 			['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
 	[`weapon_browning`] 			 = {['name'] = 'weapon_browning', 		['label'] = 'BROWNING', 			['weapontype'] = 'Pistol',			['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
 	[`weapon_dp9`] 				 	 = {['name'] = 'weapon_dp9', 			['label'] = 'DP9', 				   	['weapontype'] = 'Pistol',			['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
+    [`weapon_p226`] 				 	 = {['name'] = 'weapon_p226', 			['label'] = 'PISTOL P226', 				   	['weapontype'] = 'Pistol',			['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
+    [`weapon_tec9`] 				 	 = {['name'] = 'weapon_tec9', 			['label'] = 'TEC-9', 				   	['weapontype'] = 'Pistol',			['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
 	[`weapon_m4a1`] 				 = {['name'] = 'weapon_m4a1', 			['label'] = 'M4A1', 				['weapontype'] = 'Pistol',			['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
 	[`weapon_groza`] 		 		 = {['name'] = 'weapon_groza', 	 		['label'] = 'GROZA', 				['weapontype'] = 'Assault Rifle',	['ammotype'] = 'AMMO_RIFLE',	['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
 	[`weapon_uzi`] 			 		 = {['name'] = 'weapon_uzi', 			['label'] = 'UZI', 					['weapontype'] = 'Submachine Gun',	['ammotype'] = 'AMMO_SMG',		['damagereason'] = 'Riddled / Drilled / Finished / Submachine Gunned'},
@@ -57,6 +64,7 @@
     [`weapon_sword`] 			     = {['name'] = 'weapon_sword', 		['label'] = 'SWORD', 			['weapontype'] = 'Melee',	['ammotype'] = nil, ['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
     [`weapon_m67`] 		        	= {['name'] = 'weapon_m67', 			['label'] = 'M67', 				['weapontype'] = 'Throwable',	['ammotype'] = nil,				['damagereason'] = 'Bombed / Exploded / Detonated / Blew up'},
     [`weapon_m4`] 		 		 = {['name'] = 'weapon_m4', 	 		['label'] = 'M4', 						['weapontype'] = 'Assault Rifle',	['ammotype'] = 'AMMO_RIFLE',	['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
+    [`weapon_hk416b`] 		 		 = {['name'] = 'weapon_hk416b', 	 		['label'] = 'HK416-B', 						['weapontype'] = 'Assault Rifle',	['ammotype'] = 'AMMO_RIFLE',	['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
     [`weapon_m45a1`] 				 = {['name'] = 'weapon_m45a1', 			['label'] = 'M45A1', 				['weapontype'] = 'Pistol',			['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'}
     [`weapon_vector`] 			 		 = {['name'] = 'weapon_vector', 			['label'] = 'KRISS VECTOR', 					['weapontype'] = 'Submachine Gun',	['ammotype'] = 'AMMO_SMG',		['damagereason'] = 'Riddled / Drilled / Finished / Submachine Gunned'},
 
@@ -89,6 +97,10 @@
     'WEAPON_M4',
     'WEAPON_M45A1',
     'weapon_vector',
+    'weapon_p226',
+    'weapon_hk416b',
+    'weapon_tec9',
+    'weapon_sledgehammer',
 ```
 
 # ADD THIS IN qb-weapons/config.lua
@@ -113,7 +125,14 @@
 ['WEAPON_mp5'] 		        = 0.15,
 ['WEAPON_M67'] 		        = 0.15,
 ['WEAPON_m45a1'] 		    = 0.15,
+['WEAPON_m4'] 		        = 0.15,
+['WEAPON_m4a1'] 		    = 0.15,
 ['weapon_vector']           = 0.15,
+['weapon_tec9']             = 0.15,
+['weapon_hk416b']           = 0.15,
+['weapon_p226']             = 0.15,
+['weapon_glock22']          = 0.15,
+['weapon_sledgehammer']     = 0.15,
 
 ```
 
@@ -136,6 +155,10 @@
     [GetHashKey("weapon_mp5")] = 0.4,
     [GetHashKey("weapon_beanbag")] = 0.1,
     [GetHashKey("weapon_vector")] = 0.3,
+	[GetHashKey("weapon_draco")] = 0.3,
+	[GetHashKey("weapon_hk416b")] = 0.3,
+	[GetHashKey("weapon_p226")] = 0.1,
+	[GetHashKey("weapon_tec9")] = 0.1,
 
 ```
 ## REPLACE THE NEXT CODE IN QB-JEWELERY/CONFIG.LUA
@@ -218,6 +241,18 @@ Config.WhitelistedWeapons = {
     [`weapon_vector`] = {
         ["timeOut"] = 10000
     },
+    [`weapon_hk416b`] = {
+        ["timeOut"] = 10000
+    },
+    [`weapon_sledgehammer`] = {
+        ["timeOut"] = 10000
+    },
+    [`weapon_p226`] = {
+        ["timeOut"] = 10000
+    },
+    [`weapon_tec9`] = {
+        ["timeOut"] = 10000
+    },
 }
 
 ```
@@ -229,6 +264,7 @@ Config.WhitelistedWeapons = {
     [`WEAPON_gepard`] = Config.WeaponClasses['HIGH_CALIBER'],
     [`WEAPON_draco`] = Config.WeaponClasses['HIGH_CALIBER'],
     [`WEAPON_m4`] = Config.WeaponClasses['HIGH_CALIBER'],
+    [`WEAPON_hk416b`] = Config.WeaponClasses['HIGH_CALIBER'],
     --[[ MEDIUM CALIBER ]]
     [`WEAPON_uzi`] = Config.WeaponClasses['MEDIUM_CALIBER'],
     [`WEAPON_mac10`] = Config.WeaponClasses['MEDIUM_CALIBER'],
@@ -242,6 +278,8 @@ Config.WhitelistedWeapons = {
     [`WEAPON_dp9`] = Config.WeaponClasses['SMALL_CALIBER'],
     [`WEAPON_g18c`] = Config.WeaponClasses['SMALL_CALIBER'],
     [`WEAPON_glock22`] = Config.WeaponClasses['SMALL_CALIBER'],
+    [`WEAPON_p226`] = Config.WeaponClasses['SMALL_CALIBER'],
+    [`WEAPON_tec9`] = Config.WeaponClasses['SMALL_CALIBER'],
     --[[ CUTTING ]]
     [`WEAPON_riftedge`] = Config.WeaponClasses['CUTTING'],
     [`WEAPON_KATANA`] = Config.WeaponClasses['CUTTING'],
@@ -250,6 +288,7 @@ Config.WhitelistedWeapons = {
     --[[ HEAVY IMPACT ]]
     [`WEAPON_dildo`] = Config.WeaponClasses['HEAVY_IMPACT'],
     [`WEAPON_keyboard`] = Config.WeaponClasses['HEAVY_IMPACT'],
+    [`weapon_sledgehammer`] = Config.WeaponClasses['HEAVY_IMPACT'],
     --[[Explosives]]--
     [`WEAPON_M67`] = Config.WeaponClasses['EXPLOSIVE'],
     --[[ Shotguns ]]--
@@ -348,6 +387,16 @@ Config.WhitelistedWeapons = {
 	y_rotation = -120.0,
 	z_rotation = 180.0,
     },
+    ["weapon_sledgehammer"] = {
+	model="w_me_sledgehammer",
+	back_bone = 24818,
+	x = -0.2,
+	y = -0.15,
+	z = 0.12,
+	x_rotation = 0.0,
+	y_rotation = -120.0,
+	z_rotation = 180.0,
+    },
     ["weapon_riftedge"] = {
 	model="w_me_riftedge",
 	back_bone = 24818,
@@ -388,14 +437,25 @@ Config.WhitelistedWeapons = {
         y_rotation = -180.0,
         z_rotation = 180.0,
     },
+    ["WEAPON_HK416B"] = {
+        model="w_ar_HK416B",
+        back_bone = 24818,
+        x = -0.0,
+        y = -0.17,
+        z = 0.08,
+        x_rotation = 0.0,
+        y_rotation = -180.0,
+        z_rotation = 180.0,
+    },
     
 ```
 
-## ADD THIS IN ps-dispatch/client/cl_events.lua (IF USING PS-DISPATCH)
+## ADD THIS IN ps-dispatch/client/cl_events.lua (IF USING OLD PS-DISPATCH)
 
 ```
 -- GD-Weapons
     [GetHashKey("weapon_groza")] = "CLASS 3: GROZA",
+    [GetHashKey("weapon_hk416b")] = "CLASS 3: GROZA",
     [GetHashKey("weapon_gepard")] = "CLASS 3: GEPARD",
     [GetHashKey("weapon_draco")] = "CLASS 3: DRACO",
     [GetHashKey("weapon_browning")] = "CLASS 2: BROWNING",
@@ -410,6 +470,9 @@ Config.WhitelistedWeapons = {
     [GetHashKey("weapon_mp5")] = "CLASS 2: MP5",
     [GetHashKey("weapon_m67")] = "CLASS 69: M67 GRENADE",
     [GetHashKey("weapon_vector")] = "CLASS 2: KRISS VECTOR",
+    [GetHashKey("weapon_hk416b")] = "CLASS 3: HK416-B",
+    [GetHashKey("weapon_hk416b")] = "CLASS 1: P226",
+    [GetHashKey("weapon_hk416b")] = "CLASS 1: TEC9",
 
 ```
 ## Drop the next code in qb-weapons/config.lua (about line 209)

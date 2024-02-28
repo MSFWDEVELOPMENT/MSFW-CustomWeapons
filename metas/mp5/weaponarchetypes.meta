@@ -1,19 +1,32 @@
-<?xml version="1.0" encoding="UTF - 8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <CWeaponModelInfo__InitDataList>
 	<InitDatas>
+		<!-- ### sub-machineguns ### -->
 		<Item>
-			<modelName>w_sb_mp5_mag1</modelName>
-			<txdName>w_sb_mp5_mag1</txdName>
-			<ptfxAssetName>NULL</ptfxAssetName>
-			<lodDist value="300"/>
+			<modelName>W_SB_MP5</modelName>
+			<txdName>W_SB_MP5</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="30"/>
 		</Item>
 		<Item>
-			<modelName>w_sb_mp5</modelName>
-			<txdName>w_sb_mp5</txdName>
-			<ptfxAssetName>NULL</ptfxAssetName>
-			<lodDist value="500"/>
+			<modelName>W_SB_MP5_Mag1</modelName>
+			<txdName>W_SB_MP5_Mag1</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="30"/>
 		</Item>
+		<!-- ### attachments ### -->
+		<Item>
+			<modelName>W_AT_Scope_MP5</modelName>
+			<txdName>W_AT_Scope_MP5</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="30"/>
+		</Item>
+		<Item>
+			<modelName>W_AT_MP5_Supp</modelName>
+			<txdName>W_AT_MP5_Supp</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="30"/>
+		</Item>	
 	</InitDatas>
 </CWeaponModelInfo__InitDataList>
-
